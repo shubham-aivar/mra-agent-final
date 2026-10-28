@@ -1,0 +1,53 @@
+{
+  "_status": "INFERRED from the reference engagement's 'Questions' sheet (the AWS MRA questionnaire export). Change the aliases here if Ingram's export names columns differently; no code change is needed.",
+  "version": "inferred-0.1",
+  "questionnaire": {
+    "sheet": null,
+    "columns": {
+      "section": ["Section"],
+      "category": ["Category"],
+      "number": ["#"],
+      "question": ["Question"],
+      "type": ["Response Type"],
+      "response": ["Response"],
+      "rating_guide": ["Rating Guide (if applicable)", "Rating Guide"],
+      "comments": ["Comments"],
+      "level1": ["Rating 1"], "level2": ["Rating 2"], "level3": ["Rating 3"], "level4": ["Rating 4"], "level5": ["Rating 5"]
+    },
+    "type_names": {"rating": "rating", "yes/no": "yes_no", "text": "text"},
+    "text_answer_from": "comments",
+    "yes_no_answer_from": "response",
+    "yes_values": ["yes", "y", "true"],
+    "no_values": ["no", "n", "false"]
+  },
+  "template_import": {
+    "perspectives": [
+      {"section": "Business", "id": "business", "prefix": "BUS"},
+      {"section": "Platform", "id": "platform", "prefix": "PLA"},
+      {"section": "People", "id": "people", "prefix": "PEO"},
+      {"section": "Governance", "id": "governance", "prefix": "GOV"},
+      {"section": "Operations", "id": "operations", "prefix": "OPS"},
+      {"section": "Security", "id": "security", "prefix": "SEC"}
+    ],
+    "other_sections": {"Scope": "SCO", "Activities": "ACT"},
+    "modules": [
+      {"section": "Optional - VMC", "id": "vmc", "name": "VMware Cloud", "prefix": "VMC", "gate_number": 7},
+      {"section": "Optional - Storage", "id": "storage", "name": "Storage", "prefix": "STO", "gate_number": 8},
+      {"section": "Optional - Microsoft", "id": "microsoft", "name": "Microsoft", "prefix": "MIC", "gate_number": 9},
+      {"section": "Optional - NetworkTrans", "id": "network", "name": "Network transformation", "prefix": "NET", "gate_number": 10},
+      {"section": "Optional - Database", "id": "database", "name": "Database", "prefix": "DAT", "gate_number": 11},
+      {"section": "Optional - Outpost", "id": "outpost", "name": "Outpost", "prefix": "OUT", "gate_number": 12},
+      {"section": "Optional - SAP", "id": "sap", "name": "SAP", "prefix": "SAP", "gate_number": 13},
+      {"section": "Optional - App Modernization", "id": "app-modernization", "name": "App modernization", "prefix": "APP", "gate_number": 14},
+      {"section": "Optional - SaaS", "id": "saas", "name": "SaaS", "prefix": "SAA", "gate_number": 15}
+    ]
+  },
+  "evidence_columns": {
+    "evidence_id": ["Evidence ID", "ID"],
+    "source": ["Source"],
+    "kind": ["Kind", "Type"],
+    "text": ["Text", "Note", "Evidence"],
+    "applies_to": ["Applies to", "Questions", "Areas"]
+  },
+  "multi_value_separator": ";"
+}

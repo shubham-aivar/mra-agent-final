@@ -1,0 +1,39 @@
+{
+  "_status": "INFERRED from the reference engagement's outputs (Scores sheet, Word report, deck chart data): every value there is reproduced exactly. The red threshold was never seen, so it is null until Ingram supplies it.",
+  "version": "inferred-0.1",
+  "scale_min": 1,
+  "scale_max": 5,
+  "rounding": {
+    "display_decimals": 1,
+    "internal_decimals": 3,
+    "radar_multiplier": 20,
+    "radar_decimals": 2
+  },
+  "colours": {
+    "green_from": 4.0,
+    "red_below": null
+  },
+  "radar_guide": 80,
+  "action_below": 4.0,
+  "high_claim_at_or_above": 4.0,
+  "presentation": {
+    "strengths_n": 2,
+    "gaps_n": 4,
+    "key_strong_n": 2,
+    "key_weak_n": 3,
+    "key_observation_pages": [
+      [
+        "business-case",
+        "migration-project-plan",
+        "skills-coe",
+        "landing-zone",
+        "application-portfolio",
+        "migration-process"
+      ],
+      [
+        "operating-model",
+        "security-compliance"
+      ]
+    ]
+  }
+}

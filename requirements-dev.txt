@@ -1,0 +1,6 @@
+-r requirements-hosted.txt
+pytest>=8
+moto[server]>=5
+ruff
+cfn-lint
+# the browser tests also need: npm install -g playwright && npx playwright install chromium

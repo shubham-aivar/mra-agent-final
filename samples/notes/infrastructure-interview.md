@@ -1,0 +1,1 @@
+Backup and recovery runs nightly but restores have never been tested. The data centre lease ends in June 2027, so the first migration wave must finish before the lease ends. There is a change freeze every December. Network connectivity to the cloud is a single link with no redundancy.

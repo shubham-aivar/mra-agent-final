@@ -1,0 +1,1 @@
+The security leader explained that single sign-on exists for corporate applications but not for the cloud accounts. Identity and access management for cloud still relies on local administrator logins. Security monitoring and response is not set up for cloud workloads. Compliance requires that customer data stays in the United States.

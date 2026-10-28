@@ -1,0 +1,22 @@
+{
+  "_status": "Run settings. Everything here can be overridden by environment variables MRA_LLM_MODE, MRA_MODEL_ID, MRA_REGION, MRA_STORAGE_MODE, MRA_BUCKET, MRA_LOCAL_ROOT.",
+  "llm": {
+    "mode": "stub",
+    "model_id": "us.anthropic.claude-opus-4-6-v1",
+    "region": "us-east-1",
+    "max_tokens": 3000,
+    "batch_size": 4,
+    "max_retries": 2
+  },
+  "storage": {
+    "mode": "local",
+    "local_root": ".local",
+    "bucket": null
+  },
+  "mask_emails_in_prompts": true,
+  "agent": {
+    "max_steps": 15,
+    "max_tool_calls": 40,
+    "max_total_tokens": 60000
+  }
+}

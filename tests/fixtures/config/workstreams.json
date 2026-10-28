@@ -1,0 +1,354 @@
+{
+  "_status": "INFERRED from the reference engagement's Word report (question-to-activity mapping, all 62 scored ratings) and the deck heatmap slide (diamond = Pre-Mobilize). Replace with the AWS tool's own metadata when Ingram supplies it.",
+  "version": "inferred-0.1",
+  "workstreams": [
+    {
+      "id": "business-case",
+      "name": "Business Case",
+      "activities": [
+        {
+          "id": "BC-1",
+          "name": "High Level Business Case",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q26",
+            "Q29",
+            "Q33"
+          ]
+        },
+        {
+          "id": "BC-2",
+          "name": "Key Stakeholder Sign-off",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q27"
+          ]
+        },
+        {
+          "id": "BC-3",
+          "name": "Migration Funding Commitment",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q28"
+          ]
+        },
+        {
+          "id": "BC-4",
+          "name": "Specific Migration Workloads Committed",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "migration-project-plan",
+      "name": "Customer Migration Project Plan",
+      "activities": [
+        {
+          "id": "MP-1",
+          "name": "Determine Delivery Model & Approach",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q54"
+          ]
+        },
+        {
+          "id": "MP-2",
+          "name": "Project Management Capability",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q53"
+          ]
+        },
+        {
+          "id": "MP-3",
+          "name": "Migration Plan",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q55"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills-coe",
+      "name": "Skills & COE",
+      "activities": [
+        {
+          "id": "SC-1",
+          "name": "Single Threaded Leader",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q44"
+          ]
+        },
+        {
+          "id": "SC-2",
+          "name": "Experience baseline",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q39",
+            "Q40",
+            "Q46",
+            "Q47"
+          ]
+        },
+        {
+          "id": "SC-3",
+          "name": "Design or Evolve COE",
+          "phase": "Mobilize",
+          "questions": [
+            "Q42",
+            "Q43"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "landing-zone",
+      "name": "Landing Zone",
+      "activities": [
+        {
+          "id": "LZ-1",
+          "name": "Account Design & Configuration",
+          "phase": "Mobilize",
+          "questions": [
+            "Q41"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "application-portfolio",
+      "name": "Application Portfolio Discovery & Planning",
+      "activities": [
+        {
+          "id": "AP-1",
+          "name": "Application Discovery Data",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q36",
+            "Q37",
+            "Q48",
+            "Q49",
+            "Q50",
+            "Q51"
+          ]
+        },
+        {
+          "id": "AP-2",
+          "name": "Workload Owner Buy-In or Alignment",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q23",
+            "Q35",
+            "Q45"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "migration-process",
+      "name": "Migration Process & Experience",
+      "activities": [
+        {
+          "id": "ME-1",
+          "name": "Migration Experience",
+          "phase": "Mobilize",
+          "questions": [
+            "Q38"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "operating-model",
+      "name": "Operating Model",
+      "activities": [
+        {
+          "id": "OM-1",
+          "name": "Current Operations Model",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q52"
+          ]
+        },
+        {
+          "id": "OM-2",
+          "name": "Managed Service Provider Identified",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q24"
+          ]
+        },
+        {
+          "id": "OM-3",
+          "name": "AMI/Patching",
+          "phase": "Mobilize",
+          "questions": [
+            "Q66"
+          ]
+        },
+        {
+          "id": "OM-4",
+          "name": "Backup",
+          "phase": "Mobilize",
+          "questions": [
+            "Q62"
+          ]
+        },
+        {
+          "id": "OM-5",
+          "name": "Asset Management",
+          "phase": "Mobilize",
+          "questions": [
+            "Q68",
+            "Q69"
+          ]
+        },
+        {
+          "id": "OM-6",
+          "name": "Config Management & Change Management",
+          "phase": "Mobilize",
+          "questions": [
+            "Q64",
+            "Q65"
+          ]
+        },
+        {
+          "id": "OM-7",
+          "name": "BCP/DR",
+          "phase": "Mobilize",
+          "questions": [
+            "Q61"
+          ]
+        },
+        {
+          "id": "OM-8",
+          "name": "Service Catalog",
+          "phase": "Mobilize",
+          "questions": [
+            "Q57"
+          ]
+        },
+        {
+          "id": "OM-9",
+          "name": "Cost Management",
+          "phase": "Mobilize",
+          "questions": [
+            "Q30",
+            "Q31",
+            "Q32"
+          ]
+        },
+        {
+          "id": "OM-10",
+          "name": "Cloud Ready Operational Processes & Run Books",
+          "phase": "Mobilize",
+          "questions": [
+            "Q59",
+            "Q60"
+          ]
+        },
+        {
+          "id": "OM-11",
+          "name": "CI/CD Pipelines",
+          "phase": "Mobilize",
+          "questions": [
+            "Q56",
+            "Q58"
+          ]
+        },
+        {
+          "id": "OM-12",
+          "name": "Incident Response",
+          "phase": "Mobilize",
+          "questions": [
+            "Q63"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-compliance",
+      "name": "Security & Compliance",
+      "activities": [
+        {
+          "id": "SE-1",
+          "name": "Security Strategy",
+          "phase": "Mobilize",
+          "questions": [
+            "Q70",
+            "Q71",
+            "Q72",
+            "Q73"
+          ]
+        },
+        {
+          "id": "SE-2",
+          "name": "Security Reference Architecture",
+          "phase": "Mobilize",
+          "questions": [
+            "Q74"
+          ]
+        },
+        {
+          "id": "SE-3",
+          "name": "3rd Party Risk",
+          "phase": "Pre-Mobilize",
+          "questions": [
+            "Q34"
+          ]
+        },
+        {
+          "id": "SE-4",
+          "name": "Governance, Risk & Compliance",
+          "phase": "Mobilize",
+          "questions": [
+            "Q75",
+            "Q76",
+            "Q77",
+            "Q78",
+            "Q79",
+            "Q80"
+          ]
+        },
+        {
+          "id": "SE-5",
+          "name": "Logging & Monitoring",
+          "phase": "Mobilize",
+          "questions": [
+            "Q67"
+          ]
+        },
+        {
+          "id": "SE-6",
+          "name": "Lifecycle Security Capabilities",
+          "phase": "Mobilize",
+          "questions": [
+            "Q81",
+            "Q82"
+          ]
+        },
+        {
+          "id": "SE-7",
+          "name": "DevSecOps Principles",
+          "phase": "Mobilize",
+          "questions": [
+            "Q83"
+          ]
+        },
+        {
+          "id": "SE-8",
+          "name": "Security Operations Playbook",
+          "phase": "Mobilize",
+          "questions": [
+            "Q84"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "_status": "PROPOSED. Objective and action wording are copied from the AWS template slide 'MRA Prioritized List of Actions'; which activities trigger which entry is Aivar's proposal. Replace with Ingram's action library.",
+  "version": "proposed-0.1",
+  "trigger_below": 4.0,
+  "fallback": "Agree an owner and a date to reach the next rating level.",
+  "actions": [
+    {
+      "id": "AL-01",
+      "objective": "Create and communicate a Business Case",
+      "text": "Share the initial business case with the broader team to build consensus and buy-in AND/OR MAP Accelerator: Start the “Rapid Migration Business Case” engagement with AWS Cloud Economics team, including TSO Logic based infrastructure discovery, software licensing optimization, and TCO saving estimation",
+      "activities": [
+        "BC-1",
+        "BC-2",
+        "BC-3"
+      ]
+    },
+    {
+      "id": "AL-02",
+      "objective": "Have the initiative Leader named",
+      "text": "Customer to identify a single threaded leader who has authority within the organization to increase decision velocity and identify key stakeholders across the value chain",
+      "activities": [
+        "SC-1"
+      ]
+    },
+    {
+      "id": "AL-03",
+      "objective": "Build a CCoE",
+      "text": "Engage AWS to build/refine CCOE functions AND/OR MAP Accelerator: Run the \"CCOE Foundations\" interactive workshop to provide leaders with insights on the value of a CCoE function, mechanisms for success, how it evolves over time, and how to utilize it as a lever in driving change in how organizations think, behave, decide, and innovate using Cloud.",
+      "activities": [
+        "SC-3"
+      ]
+    },
+    {
+      "id": "AL-04",
+      "objective": "Ensure right skills to support the initiative",
+      "text": "Identify a training leader to help drive initiative AND/OR Engage the AWS Training team for a learning needs assessment",
+      "activities": [
+        "SC-2"
+      ]
+    },
+    {
+      "id": "AL-05",
+      "objective": "Accelerate to the next phase and change the way you work",
+      "text": "EBA Accelerator: Conduct the “Platform Party” to stress test and validate the AWS landing zone and move your first applications (for customers not leveraging ProServe led Mobilize but using prescriptive guidance from AWS via EBA) OR (for customers that will engage AWS ProServe for Mobilize) MAP Accelerator: Conduct the “Pre-Mobilize EBA” to define and baseline the landing zone architecture design or to test and validate the landing zone and migration factory (for customers that already have a platform built)",
+      "activities": [
+        "LZ-1",
+        "ME-1"
+      ]
+    },
+    {
+      "id": "AL-06",
+      "objective": "Assure security is considered at front of the initiative",
+      "text": "MAP Accelerator: Run the \"Security Briefing\" to educate key stakeholders on security model and cloud security foundations AND/OR Get the 3rd party risk assessment completed. Engage AWS as needed to ensure passage",
+      "activities": [
+        "SE-1",
+        "SE-3",
+        "SE-4"
+      ]
+    },
+    {
+      "id": "AL-07",
+      "objective": "Determine preferred operating model",
+      "text": "Evaluate AWS Managed Services (AMS) to see if it makes sense to offload mundane activities/infrastructure ops to that and keep resources focused on innovation and differentiating activities",
+      "activities": [
+        "OM-1",
+        "OM-2"
+      ]
+    },
+    {
+      "id": "AL-08",
+      "objective": "Get discovery tooling in place",
+      "text": "Select and implement automated discovery tooling from one of the AWS partners that can assist in inventory and dependency mapping with expert guidance AND/OR MAP Accelerator: Participate in the 1-day \"Migration Immersion Day\" that introduces AWS discovery and migration tools (e.g. CloudEndure, Application Discovery Service) and migrate an app in a simulated environment",
+      "activities": [
+        "AP-1"
+      ]
+    },
+    {
+      "id": "AL-09",
+      "objective": "Determine and engage partners involved in the initiative",
+      "text": "Confirm decision regarding roles of internal teams, Partner, and AWS, and involve Partner (if applicable) in the migration strategy and planning as early as possible",
+      "activities": [
+        "MP-1"
+      ]
+    },
+    {
+      "id": "AL-10",
+      "objective": "Identify first movers",
+      "text": "Identify initial movers (generally require App Owner who is a promoter and an App that is not complex)",
+      "activities": [
+        "BC-4",
+        "AP-2"
+      ]
+    }
+  ]
+}

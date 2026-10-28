@@ -1,0 +1,2827 @@
+{
+  "_status": "IMPORTED from aws_mra_questionnaire_export.xlsx (sha256 937d265e10c1). Template content only; answers ignored.",
+  "version": "aws-mra-2026",
+  "perspectives": [
+    {
+      "id": "business",
+      "name": "Business"
+    },
+    {
+      "id": "platform",
+      "name": "Platform"
+    },
+    {
+      "id": "people",
+      "name": "People"
+    },
+    {
+      "id": "governance",
+      "name": "Governance"
+    },
+    {
+      "id": "operations",
+      "name": "Operations"
+    },
+    {
+      "id": "security",
+      "name": "Security"
+    }
+  ],
+  "areas": [
+    {
+      "id": "SCO-01",
+      "perspective": null,
+      "section": "Scope",
+      "name": "Goals",
+      "module": null
+    },
+    {
+      "id": "SCO-02",
+      "perspective": null,
+      "section": "Scope",
+      "name": "Technical",
+      "module": null
+    },
+    {
+      "id": "ACT-01",
+      "perspective": null,
+      "section": "Activities",
+      "name": "Activity 1",
+      "module": null
+    },
+    {
+      "id": "ACT-02",
+      "perspective": null,
+      "section": "Activities",
+      "name": "Activity 2",
+      "module": null
+    },
+    {
+      "id": "ACT-03",
+      "perspective": null,
+      "section": "Activities",
+      "name": "Activity 3",
+      "module": null
+    },
+    {
+      "id": "ACT-04",
+      "perspective": null,
+      "section": "Activities",
+      "name": "Activity 4",
+      "module": null
+    },
+    {
+      "id": "BUS-01",
+      "perspective": "business",
+      "section": "Business",
+      "name": "IT Governance",
+      "module": null
+    },
+    {
+      "id": "BUS-02",
+      "perspective": "business",
+      "section": "Business",
+      "name": "IT Service Delivery Model",
+      "module": null
+    },
+    {
+      "id": "BUS-03",
+      "perspective": "business",
+      "section": "Business",
+      "name": "Cloud Objectives",
+      "module": null
+    },
+    {
+      "id": "BUS-04",
+      "perspective": "business",
+      "section": "Business",
+      "name": "Value Management",
+      "module": null
+    },
+    {
+      "id": "BUS-05",
+      "perspective": "business",
+      "section": "Business",
+      "name": "IT Strategy",
+      "module": null
+    },
+    {
+      "id": "BUS-06",
+      "perspective": "business",
+      "section": "Business",
+      "name": "Cost Management",
+      "module": null
+    },
+    {
+      "id": "BUS-07",
+      "perspective": "business",
+      "section": "Business",
+      "name": "Risk Management",
+      "module": null
+    },
+    {
+      "id": "BUS-08",
+      "perspective": "business",
+      "section": "Business",
+      "name": "Portfolio Governance",
+      "module": null
+    },
+    {
+      "id": "PLA-01",
+      "perspective": "platform",
+      "section": "Platform",
+      "name": "Conceptual Architecture",
+      "module": null
+    },
+    {
+      "id": "PLA-02",
+      "perspective": "platform",
+      "section": "Platform",
+      "name": "Logical Architecture",
+      "module": null
+    },
+    {
+      "id": "PLA-03",
+      "perspective": "platform",
+      "section": "Platform",
+      "name": "Application Migration Patterns",
+      "module": null
+    },
+    {
+      "id": "PLA-04",
+      "perspective": "platform",
+      "section": "Platform",
+      "name": "Cloud Design Principles & Patterns",
+      "module": null
+    },
+    {
+      "id": "PLA-05",
+      "perspective": "platform",
+      "section": "Platform",
+      "name": "Implementation Architecture",
+      "module": null
+    },
+    {
+      "id": "PEO-01",
+      "perspective": "people",
+      "section": "People",
+      "name": "Organizational Structure",
+      "module": null
+    },
+    {
+      "id": "PEO-02",
+      "perspective": "people",
+      "section": "People",
+      "name": "Roles & Job Descriptions",
+      "module": null
+    },
+    {
+      "id": "PEO-03",
+      "perspective": "people",
+      "section": "People",
+      "name": "Manage Staffing",
+      "module": null
+    },
+    {
+      "id": "PEO-04",
+      "perspective": "people",
+      "section": "People",
+      "name": "Organizational Change Management",
+      "module": null
+    },
+    {
+      "id": "GOV-01",
+      "perspective": "governance",
+      "section": "Governance",
+      "name": "Portfolio Management",
+      "module": null
+    },
+    {
+      "id": "GOV-02",
+      "perspective": "governance",
+      "section": "Governance",
+      "name": "Service Delivery Management",
+      "module": null
+    },
+    {
+      "id": "GOV-03",
+      "perspective": "governance",
+      "section": "Governance",
+      "name": "Program & Project Management",
+      "module": null
+    },
+    {
+      "id": "GOV-04",
+      "perspective": "governance",
+      "section": "Governance",
+      "name": "Continuous Integration & Continuous Delivery",
+      "module": null
+    },
+    {
+      "id": "GOV-05",
+      "perspective": "governance",
+      "section": "Governance",
+      "name": "Process Automation",
+      "module": null
+    },
+    {
+      "id": "GOV-06",
+      "perspective": "governance",
+      "section": "Governance",
+      "name": "Quality Management",
+      "module": null
+    },
+    {
+      "id": "OPS-01",
+      "perspective": "operations",
+      "section": "Operations",
+      "name": "Cloud Service Management",
+      "module": null
+    },
+    {
+      "id": "OPS-02",
+      "perspective": "operations",
+      "section": "Operations",
+      "name": "Business Continuity Planning",
+      "module": null
+    },
+    {
+      "id": "OPS-03",
+      "perspective": "operations",
+      "section": "Operations",
+      "name": "Incident & Problem Management",
+      "module": null
+    },
+    {
+      "id": "OPS-04",
+      "perspective": "operations",
+      "section": "Operations",
+      "name": "Change & Configuration Management",
+      "module": null
+    },
+    {
+      "id": "OPS-05",
+      "perspective": "operations",
+      "section": "Operations",
+      "name": "Performance & Operational Health",
+      "module": null
+    },
+    {
+      "id": "OPS-06",
+      "perspective": "operations",
+      "section": "Operations",
+      "name": "Asset Management",
+      "module": null
+    },
+    {
+      "id": "SEC-01",
+      "perspective": "security",
+      "section": "Security",
+      "name": "Security Strategy",
+      "module": null
+    },
+    {
+      "id": "SEC-02",
+      "perspective": "security",
+      "section": "Security",
+      "name": "Security Reference Architecture",
+      "module": null
+    },
+    {
+      "id": "SEC-03",
+      "perspective": "security",
+      "section": "Security",
+      "name": "Governance, Risk & Compliance",
+      "module": null
+    },
+    {
+      "id": "SEC-04",
+      "perspective": "security",
+      "section": "Security",
+      "name": "Lifecycle Security Capabilities",
+      "module": null
+    },
+    {
+      "id": "SEC-05",
+      "perspective": "security",
+      "section": "Security",
+      "name": "DevSecOps Principles",
+      "module": null
+    },
+    {
+      "id": "SEC-06",
+      "perspective": "security",
+      "section": "Security",
+      "name": "Security Operations Playbook",
+      "module": null
+    },
+    {
+      "id": "VMC-01",
+      "perspective": null,
+      "section": "Optional - VMC",
+      "name": "VMWare Cloud",
+      "module": "vmc"
+    },
+    {
+      "id": "STO-01",
+      "perspective": null,
+      "section": "Optional - Storage",
+      "name": "Storage",
+      "module": "storage"
+    },
+    {
+      "id": "MIC-01",
+      "perspective": null,
+      "section": "Optional - Microsoft",
+      "name": "Microsoft Overview",
+      "module": "microsoft"
+    },
+    {
+      "id": "MIC-02",
+      "perspective": null,
+      "section": "Optional - Microsoft",
+      "name": "Microsoft Migration Estimate",
+      "module": "microsoft"
+    },
+    {
+      "id": "NET-01",
+      "perspective": null,
+      "section": "Optional - NetworkTrans",
+      "name": "Connectivity to Datacenters",
+      "module": "network"
+    },
+    {
+      "id": "NET-02",
+      "perspective": null,
+      "section": "Optional - NetworkTrans",
+      "name": "Connectivity within AWS",
+      "module": "network"
+    },
+    {
+      "id": "NET-03",
+      "perspective": null,
+      "section": "Optional - NetworkTrans",
+      "name": "Connectivity to Branches",
+      "module": "network"
+    },
+    {
+      "id": "NET-04",
+      "perspective": null,
+      "section": "Optional - NetworkTrans",
+      "name": "Connectivity to Internet",
+      "module": "network"
+    },
+    {
+      "id": "NET-05",
+      "perspective": null,
+      "section": "Optional - NetworkTrans",
+      "name": "Network Security",
+      "module": "network"
+    },
+    {
+      "id": "DAT-01",
+      "perspective": null,
+      "section": "Optional - Database",
+      "name": "Database Portfolio",
+      "module": "database"
+    },
+    {
+      "id": "OUT-01",
+      "perspective": null,
+      "section": "Optional - Outpost",
+      "name": "Outpost",
+      "module": "outpost"
+    },
+    {
+      "id": "SAP-01",
+      "perspective": null,
+      "section": "Optional - SAP",
+      "name": "SAP",
+      "module": "sap"
+    },
+    {
+      "id": "APP-01",
+      "perspective": null,
+      "section": "Optional - App Modernization",
+      "name": "App Modernization",
+      "module": "app-modernization"
+    },
+    {
+      "id": "SAA-01",
+      "perspective": null,
+      "section": "Optional - SaaS",
+      "name": "SaaS",
+      "module": "saas"
+    }
+  ],
+  "modules": [
+    {
+      "id": "vmc",
+      "name": "VMware Cloud",
+      "section": "Optional - VMC",
+      "gate": "Q7"
+    },
+    {
+      "id": "storage",
+      "name": "Storage",
+      "section": "Optional - Storage",
+      "gate": "Q8"
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "section": "Optional - Microsoft",
+      "gate": "Q9"
+    },
+    {
+      "id": "network",
+      "name": "Network transformation",
+      "section": "Optional - NetworkTrans",
+      "gate": "Q10"
+    },
+    {
+      "id": "database",
+      "name": "Database",
+      "section": "Optional - Database",
+      "gate": "Q11"
+    },
+    {
+      "id": "outpost",
+      "name": "Outpost",
+      "section": "Optional - Outpost",
+      "gate": "Q12"
+    },
+    {
+      "id": "sap",
+      "name": "SAP",
+      "section": "Optional - SAP",
+      "gate": "Q13"
+    },
+    {
+      "id": "app-modernization",
+      "name": "App modernization",
+      "section": "Optional - App Modernization",
+      "gate": "Q14"
+    },
+    {
+      "id": "saas",
+      "name": "SaaS",
+      "section": "Optional - SaaS",
+      "gate": "Q15"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "section": "Scope",
+      "category": "Goals",
+      "area": "SCO-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Describe the scope for this MRA. What is being considered in scope and what is out of scope?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "section": "Scope",
+      "category": "Goals",
+      "area": "SCO-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What are the organization's target outcomes (business and/or IT) that are in focus for this cloud initiative?  What are the primary drivers of these objectives?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "text",
+      "text": "How many servers and applications are in scope of this initiative?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "text",
+      "text": "Do you have workloads that require specific security architecture considerations (for example, PCI, SOC2, NIST, HITRUST, FedRAMP High, CJIS, ITAR, EAR, or others)?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "text",
+      "text": "Are there application requirements (fault tolerance, performance, resiliency, DR,etc.) that require Multi-AZ or multi-Region architectures?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "text",
+      "text": "What tools do you use for project management? Specifically, is Jira or Confluence in use, and which teams have been onboarded? Has the Draw.io plugin been activated?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are VMware Cloud workloads being considered as part of this migration? (Additional questions in Optional section)",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Is storage being considered as part of this migration? (Additional questions in Optional section)",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are Microsoft workloads being considered as part of this migration? (Additional questions in Optional section)",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Is network transformation being considered as part of this migration? (Additional questions in Optional section)",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are databases being considered as part of this migration? (Additional questions in Optional section)",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are on-premise appliances considered in order to meet one of the following requirements : low latency, local processing needs for technical reasons such as data gravity, or data residency? (Additional questions in Optional section)",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are SAP workloads being considered as part of this migration? (Additional questions in Optional Section)",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are there applications that are part of this migration effort with legacy characteristics that may prevent you from fully leveraging cloud benefits post migration? (Additional questions in Optional Section)",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are there applications that are part of this migration effort which you sell to other parties that you plan on evolving your licensing model for (eg perpetual to subscription)? (Additional questions in Optional Section)",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "section": "Scope",
+      "category": "Technical",
+      "area": "SCO-02",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Is Data Analytics/AI/ML workloads considered as part of this migration?If yes, do you have a specific use case identified for initial POC?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "section": "Activities",
+      "category": "Activity 1",
+      "area": "ACT-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Describe the current strategy, mandate for cloud, and level of commitment and communication (for example, is there a time-based specific value driver, pending datacenter closure, publicly communicated objective, sustainability target, or others?)",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "section": "Activities",
+      "category": "Activity 1",
+      "area": "ACT-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What is the scope and intent of this initiative (for example, lines of business, regions, application types, and/or intent to learn, test, pilot, or accelerate at scale)?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "section": "Activities",
+      "category": "Activity 2",
+      "area": "ACT-02",
+      "perspective": null,
+      "type": "text",
+      "text": "Are there any friction points concerning enterprise, technology, applications, process, or people which may potentially stall this initiative?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "section": "Activities",
+      "category": "Activity 2",
+      "area": "ACT-02",
+      "perspective": null,
+      "type": "text",
+      "text": "Are there aspects of your organization and culture which you think will help move this initiative forward?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "section": "Activities",
+      "category": "Activity 3",
+      "area": "ACT-03",
+      "perspective": null,
+      "type": "text",
+      "text": "Do you have a defined target to shift the operating model for infrastructure, operating systems, or platforms in this move to cloud?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "section": "Activities",
+      "category": "Activity 4",
+      "area": "ACT-04",
+      "perspective": null,
+      "type": "text",
+      "text": "Who are the members of the current cloud team? What are their roles, responsibilities, and authorities? Does your cloud team have a strong mix of different perspectives?",
+      "levels": [],
+      "module": null
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "section": "Business",
+      "category": "IT Governance",
+      "area": "BUS-01",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Is your IT organization run as a federation of groups or as a centralized organization? The more distributed it is, the more difficult migration coordination will be, assuming the scope spans these distributed groups.",
+      "levels": [
+        "1 - Distributed governance and/or very little influence or control over workloads targeted for migration.",
+        "2 - Either governance or influence over migration scope is lacking but can easily be improved.",
+        "3 - Governance model or span of control could use some improvement.",
+        "4 - Good governance and/or centralized control over scope of migration but could be improved.",
+        "5 - Strong governance and centralized control over scope of migration workloads."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "section": "Business",
+      "category": "IT Service Delivery Model",
+      "area": "BUS-02",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Do you have one or more managed service providers who handle the workloads in scope for migration or modernization? What is their current role -- application operator and infrastructure operations? Is it clear what their roles will be post migration?  Is there a desire to alter the insourcing/outsourcing philosophy?",
+      "levels": [
+        "1 - No service provider identified.",
+        "2 - There are some providers identified but no specific scope or roles defined.",
+        "3 - Potential providers have been identified but no contract in place.",
+        "4 - Provider identified and scope discussed, but migration and post migration roles not well understood.",
+        "5 - MSP or Ops org identified to operate AWS workloads."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "section": "Business",
+      "category": "Cloud Objectives",
+      "area": "BUS-03",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Have you defined and committed specific workloads for the initiative? Is the scope documented and communicated to all stakeholders? Are there defined first-movers or pilot applications? Do the initial workloads help accelerate attainment of your sustainability objectives?",
+      "levels": [
+        "1 - No scope identified.",
+        "2 - Beginning process of scope identification, informal or no documentation, no communicated efforts.",
+        "3 - Scope unofficially identified with little to no documentation or communicated efforts.",
+        "4 - Workloads in scope for migration and first-movers have been identified, but not yet documented or fully communicated.",
+        "5 - Workloads in scope for migration and first-movers have been identified, documented, and communicated to all stakeholders."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "section": "Business",
+      "category": "Value Management",
+      "area": "BUS-04",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Do you have a business case that articulates the cloud program objectives around all areas of value, including sustainability improvements? Has the business case been communicated to all leadership stakeholders?",
+      "levels": [
+        "1 - No business case has been documented. There might be verbal commitments only.",
+        "2 - Beginning process of developing high-level business case. Verbal commitments have been formally announced and documented.",
+        "3 - High-level business case is being developed but requires significant effort to be completed.",
+        "4 - High-level business case exists, but hasn't been communicated to all leadership stakeholders.",
+        "5 - High-level business case has been communicated to all leadership stakeholders. Business case incorporates all areas of value including AWS TCO and economics models."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "section": "Business",
+      "category": "Value Management",
+      "area": "BUS-04",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Do all your key stakeholders support the business case and the commitment to migration? Example stakeholders: CFO, COO, CISO, and so on.",
+      "levels": [
+        "1 - No stakeholders have been engaged.",
+        "2 - Limited support or understanding of the cloud business case by key stakeholders. Resources required for migrations success are unavailable or contested.",
+        "3 - Some key stakeholders have signed off or support the cloud business case. Resources required for migration success are pending request.",
+        "4 - Key stakeholders are aware or have signed off on the cloud business case but resources required are pending approval.",
+        "5 - All key stakeholders have signed off on the cloud business case and support giving the resources required to make the migration successful (that is, funding and resources). Key stakeholders: CFO, COO, CISO, CIO, CTO, etc."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "section": "Business",
+      "category": "Value Management",
+      "area": "BUS-04",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Have you made a funding commitment for your resources and AWS resources to work on migration or modernization? Has the funding been reviewed by AWS or a partner?",
+      "levels": [
+        "1 - No commitment on funding, even verbal.",
+        "2 - Beginning discussions of funding commitments, possibly verbal commitments.",
+        "3 - Some verbal commitments have been made, but no budgeting items have been discussed for the cloud migration program.",
+        "4 - Funding has been committed, but no budgeting items have been discussed. Funding amount needs AWS or partner review.",
+        "5 - Funding has been committed and budgeted for the cloud migration program. The funding amount has been reviewed by AWS or a partner."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "section": "Business",
+      "category": "IT Strategy",
+      "area": "BUS-05",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Does your IT strategy explicitly state the cloud's role and how it is tied to your business objectives? Where do you want to invest in infrastructure innovation vs. application outcomes?",
+      "levels": [
+        "1 - No linkage between business, IT, and cloud strategy.",
+        "2 - Individual group or department links between business, IT, and cloud strategy.",
+        "3 - Broadly communicated  links between business, IT, and cloud strategy. No formalized documentation or support resources assigned.",
+        "4 - Business, IT, and cloud strategy are aligned. Integration and documentation using the high-level business case are required.",
+        "5 - Business, IT, and cloud strategy are integrated and aligned. This alignment is captured in the high-level business case."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "section": "Business",
+      "category": "Cost Management",
+      "area": "BUS-06",
+      "perspective": "business",
+      "type": "rating",
+      "text": "How will you allocate and manage cloud costs? Will it be through centralized billing, or bill back or show back to application teams? What is your current practice for on-premises systems?",
+      "levels": [
+        "1 - No cost allocation strategy is in place.",
+        "2 - Early design steps of cost allocation strategy are in process. Tagging taxonomy is being designed to reflect organizational needs.",
+        "3 - AWS cost allocation approach and tagging taxonomy have been agreed upon but not communicated.",
+        "4 - AWS cost allocation approach has been defined. Tagging taxonomy has been designed but not fully established.",
+        "5 - AWS cost allocation approach has been defined. Tagging taxonomy has been established with ability to report or charge back to workload owners their bill for AWS usage."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "section": "Business",
+      "category": "Cost Management",
+      "area": "BUS-06",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Are your cost reporting requirements defined and documented? Do AWS run costs need to be ingested into your accounting and cost reporting systems? Are requirements for financial governance (allocation, chargeback, showback)  documented?",
+      "levels": [
+        "1 - Cost reporting requirements are defined but not yet for the cloud.",
+        "2 - Cost reporting requirements for cloud are clearly defined by stakeholders, but not integrated.",
+        "3 - Cost reporting for cloud is defined and integrated.",
+        "4 - Allocation/chargeback/showback is defined for cloud costs.",
+        "5 - Actual costs are fully charged back to individual teams that generate the costs."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "section": "Business",
+      "category": "Cost Management",
+      "area": "BUS-06",
+      "perspective": "business",
+      "type": "rating",
+      "text": "How familiar are you with the controls that need to be in place with your local team to control and monitor your AWS spend? What is your local teams’ level of cloud finance and economics experience?",
+      "levels": [
+        "1 - We do not currently have this understanding.",
+        "2 - We have limited knowledge of how our teams can control AWS costs.",
+        "3 - We have designed training and guidance but we have not implemented it.",
+        "4 - We are training our teams to understand our cost responsibilities.",
+        "5 - We are using existing reports. Auto-notification and monitoring are in place and being used."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "section": "Business",
+      "category": "Cost Management",
+      "area": "BUS-06",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Does your business case account for the facility closure(s) and asset liquidation anticipated with going off premises? Is there a plan and owner for this IT infrastructure disposal project?",
+      "levels": [
+        "1 - No linkage between workload migration and IT infrastructure or Data Center; no Data Center or IT infrastructure exit plan; no named owner for disposal.",
+        "2 - Discovery of workload, infrastructure, Data Center links underway. Disposal owners identified but not engaged.",
+        "3 - Workload, infrastructure, Data Center links documentation exists. Disposal owners engaged.",
+        "4 - Workload migration mapped to infrastructure and facilities. Dependency mapping of workload dates to facility and infrastructure exits. Disposal owners defining plan and process.",
+        "5 - Documented link from workload migration to infrastructure and facility outcome. Defined facility and infrastructure exit plan. Clear disposal process with named owner."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "section": "Business",
+      "category": "Risk Management",
+      "area": "BUS-07",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Security-sensitive customers often have a third-party risk assessment process to practice continuous due diligence on their information supply chain. Do you have third-party risk certifications? If so, has AWS been verified as a supplier?",
+      "levels": [
+        "1 - Third-party risk assessment activities have not begun.",
+        "2 - Discovery and documentation of impacted workloads is under way for third-party risk assessment candidates.",
+        "3 - Workloads requiring third-party risk assessment activities have been identified.",
+        "4 - Third-party risk assessments are not required for migration workloads, or workloads are currently scheduled for external compliance testing.",
+        "5 - Third-party risk assessment is complete for workloads impacted by external compliance certifications."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "section": "Business",
+      "category": "Portfolio Governance",
+      "area": "BUS-08",
+      "perspective": "business",
+      "type": "rating",
+      "text": "Have you identified the owners of workloads targeted for cloud migration or modernization, and are there clear lines of accountability and responsibility for those owners? Have those owners been bought in to the migration program?",
+      "levels": [
+        "1 - Workload owners have not been identified.",
+        "2 - Workload owners have been identified but not engaged.",
+        "3 - Workload owners have been engaged. Migration program and its goals have been communicated to workload owners and their leadership.",
+        "4 - Owners of workloads in scope for migration are aware of the migration program and its goals. There is a lack of commitment from the owners of the workloads to support the migration, or no strong support from their leadership.",
+        "5 - Owners of workloads in scope for migration are aware of the migration program and its goals. There is commitment from the owners of the workloads to support the migration, or there is strong support from their leadership."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "section": "Platform",
+      "category": "Conceptual Architecture",
+      "area": "PLA-01",
+      "perspective": "platform",
+      "type": "rating",
+      "text": "Do you have standard architectures? Are they consistently applied to applications and services in your existing environments and AWS? Is there a defined role and individual responsible for enforcing these?",
+      "levels": [
+        "1 -  No standards exist, and there are many architecture variants.",
+        "2 - Limited documentation exists with no standardization.",
+        "3 - Some documentation of application architectures exist. Adoption is limited with no reporting metrics.",
+        "4 - Well-documented application architectures. Mostly widespread adoption efforts are present. No reporting available for adoption or standard architecture usage.",
+        "5 - Well-documented application architectures. There is strong adoption and adherence to these standard architectures. There is also an ability to report on the adoption or usage of the standard architectures."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "section": "Platform",
+      "category": "Logical Architecture",
+      "area": "PLA-02",
+      "perspective": "platform",
+      "type": "rating",
+      "text": "Do you have documented data flow and integration points for applications in scope?  Does this documentation reflect performance, utilization, and dependencies in addition to data flow?",
+      "levels": [
+        "1 - No documentation exists of the application landscape and interdependencies.",
+        "2 - Minimal application blueprints or supporting landscape and interdependencies exist.",
+        "3 - Some application blueprints exist with varying standards and accuracy.",
+        "4 - Application blueprints exist with minimal data flow dependencies.",
+        "5 - Accurate blueprints exist that document data flow between applications. In addition,  infrastructure documents  show where the applications sit in the physical or virtual infrastructure."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "section": "Platform",
+      "category": "Application Migration Patterns",
+      "area": "PLA-03",
+      "perspective": "platform",
+      "type": "rating",
+      "text": "Do you have experience migrating or modernizing workloads in the cloud? Have you leveraged automated migration tools such as MGN?",
+      "levels": [
+        "1 - No application migration experience.",
+        "2 - We have previous migration experience related to physical-to-VM migrations.",
+        "3 - We have previous migration experience related to SaaS-assisted deployments.",
+        "4 - We have developed or migrated an application to production, QA, and development environments.",
+        "5 - We have migrated 5 or more applications to production, QA, and development environments. In addition, the applications have been running in production through at least 1-2 development releases."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "section": "Platform",
+      "category": "Cloud Design Principles & Patterns",
+      "area": "PLA-04",
+      "perspective": "platform",
+      "type": "rating",
+      "text": "Have you invested in any cloud-native architectures or DevOps practices? Are those responsible for running the services involved in building the service?",
+      "levels": [
+        "1 - No cloud DevOps practices or experience in cloud-native architectures.",
+        "2 - Limited organization-wide DevOps or cloud-native knowledge.",
+        "3 - We have mixed experience in DevOps principles and cloud-native knowledge.",
+        "4 - We have experience in DevOps principles that are widely adopted across the organization.",
+        "5 - We have experience in DevOps practices aligned to AWS. In addition, we have experience  working with cloud-native architectures such as leveraging AWS Lambda, Amazon DynamoDB, etc."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "section": "Platform",
+      "category": "Cloud Design Principles & Patterns",
+      "area": "PLA-04",
+      "perspective": "platform",
+      "type": "rating",
+      "text": "Do you incorporate modern AI for DevOps solutions to build applications faster and more securely with AI coding companion?",
+      "levels": [
+        "1 - Customer understands the importance of an AI coding companion, however does not have experience or not incorporated as part of their portfolio.",
+        "2 - Customer is piloting to use an AI coding companion, to improve developer productivity, there by bypass time-consuming coding tasks and accelerate building with unfamiliar APIs",
+        "3 - In addition to Piloting Phase, Customer is adopting to the use of AI coding companion for ongoing projects, flag or filter code suggestions that resemble open-source training data, Enhance code security by scanning the project code to detect hard-to-find vulnerabilities, and get code suggestions to remediate them immediately.",
+        "4 - In addition to Adopting Phase, Customer uses the AI coding companion with their existing tools like VS Code, IntelliJ, Cloud9 etc. which fits the way developers work.",
+        "5 - In addition to Maturing Phase, Customer is able to perform enterprise administration by providing users or groups access to AI coding companion using single sign-on (SSO) with any IAM integration or AWS IAM Identity Centre integration."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "section": "Platform",
+      "category": "Implementation Architecture",
+      "area": "PLA-05",
+      "perspective": "platform",
+      "type": "rating",
+      "text": "How closely do your current AWS accounts and foundational architecture follow AWS best practices around security, account management/governance, and operations, and align with workloads in scope of this initiative and future growth? Do you use standardized templates for infrastructure services, and manage infrastructure as code with full lifecycle management?",
+      "levels": [
+        "1 - No AWS accounts exist. No standards exist.",
+        "2 - Sporadic AWS accounts exist with little to no governance or provisioning standards. Development of standards are under way.",
+        "3 - AWS accounts  are centrally governed and provisioned. Some foundational architecture standards exist with limited adoption across the organization.",
+        "4 - AWS accounts  are centrally governed and managed. Foundational architecture baselines exist, but implementation largely follows manual processes.",
+        "5 - AWS accounts are centrally governed and managed with a top-level payer account and sub-accounts beneath it. The accounts are consistently pre-configured with an account, security, network, and operations baseline via an automated deployment pipeline."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "section": "People",
+      "category": "Organizational Structure",
+      "area": "PEO-01",
+      "perspective": "people",
+      "type": "rating",
+      "text": "Has a dedicated cloud team been formed with formalized role definitions and strong support and governance from the CIO? Is your cloud team inclusive of the various business and IT views of the company (such as regional representation, line-of-business representation, and so on)?",
+      "levels": [
+        "1 - No team has been staffed.",
+        "2 - A team has not been formed. The need for a team has been communicated.",
+        "3 - Initial team formation is in process.",
+        "4 - A team has been staffed with strong players. This team will focus on evangelizing cloud migration efforts.",
+        "5 - A team has been staffed with strong players. This team will drive the Mobilize activities and help drive change in the organization."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "section": "People",
+      "category": "Roles & Job Descriptions",
+      "area": "PEO-02",
+      "perspective": "people",
+      "type": "rating",
+      "text": "Have the roles and responsibilities of operations or other non-CoE teams been clarified or redefined in the cloud context?",
+      "levels": [
+        "1 - No definition of expectations for non-cloud team members.",
+        "2 - Expectations have been discussed internally to migration teams but not communicated broadly.",
+        "3 - Non-CoE members involved or impacted have been identified but not made aware of migration impact or efforts.",
+        "4 - Non-CoE members involved or impacted have been made aware of migration efforts, but roles have not been clearly defined.",
+        "5 - Clear responsibilities are defined for those non-CoE members or teams that are involved in, or impacted by, migration. For example, network engineers might need to support migration issues."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q44",
+      "number": 44,
+      "section": "People",
+      "category": "Manage Staffing",
+      "area": "PEO-03",
+      "perspective": "people",
+      "type": "rating",
+      "text": "Have you assigned, empowered, and enabled a single-threaded senior leader (STL) to oversee the cloud initiative or program? Have you engaged continuous improvement and organizational change experts to assist the STL with the change?",
+      "levels": [
+        "1 - No leader assigned to lead the effort, or the leader assigned is not yet sufficiently empowered or allocated to lead the initiative.",
+        "2 - Senior Leader in the organization has been assigned but not yet empowered or sufficiently allocated for leading this initiative. Full accountability and control have not yet been assigned to this individual.",
+        "3 - Senior Leader in the organization has been assigned and empowered but has <30% of their time allocated for leading this initiative. Full accountability and control have not yet been assigned to this individual. Leader has strong backing from the organization, is skilled in organizational change management, and has a strong reputation for delivering transformational projects.",
+        "4 - Senior Leader in the organization has been assigned and empowered but currently has <30% of their time allocated for leading this initiative. Full accountability and control have been assigned to this individual. Leader has strong backing from the organization, is skilled in organizational change management, and has a strong reputation for delivering transformational projects.",
+        "5 - Senior Leader in the organization has been assigned, empowered, and has >30% of their time allocated for leading this initiative. Full accountability and control have been assigned to this individual. Leader has strong backing from the organization, is skilled in organizational change management, and has a strong reputation for delivering transformational projects."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q45",
+      "number": 45,
+      "section": "People",
+      "category": "Organizational Change Management",
+      "area": "PEO-04",
+      "perspective": "people",
+      "type": "rating",
+      "text": "Have you communicated the migration/modernization goals and the corresponding benefits, priorities, and timeline to the entire organization? Have you defined performance goals for leaders who are involved in the cloud transformation? Have you cascaded these performance goals to the managers of your organization?",
+      "levels": [
+        "1 - Organization is unaware of the cloud program.",
+        "2 - Communication plan is being developed for the cloud program. Only members of the CoE or cloud program are aware of efforts and cloud vision.",
+        "3 - Cloud program has not been communicated broadly within the organization. Cloud vision and high-level goals have not been communicated or discussed.",
+        "4 - Cloud program has been announced to the entire organization at a high level only. Communication includes high-level goals without direction or progress metrics.",
+        "5 - Cloud program has been announced to the entire organization as a top initiative and leadership priority. The communication includes top-level goals with score-carding mechanisms to drive  and communicate progress."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q46",
+      "number": 46,
+      "section": "People",
+      "category": "Organizational Change Management",
+      "area": "PEO-04",
+      "perspective": "people",
+      "type": "rating",
+      "text": "Have you identified the cloud skills and competencies to enable resources in your organization? Has a training plan been established and rolled out? Have you conducted a learning needs analysis across your organization as it relates to cloud skills?",
+      "levels": [
+        "1 - No training plan or approach.",
+        "2 - Training approach and plan requirements are actively being gathered.",
+        "3 - Training approach and plan are actively being developed.",
+        "4 - Training approach and plan have been developed but hasn't been implemented.",
+        "5 - Training approach and plan that describes the resources to be trained have been documented, and training has started."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q47",
+      "number": 47,
+      "section": "People",
+      "category": "Organizational Change Management",
+      "area": "PEO-04",
+      "perspective": "people",
+      "type": "rating",
+      "text": "How would you rate your organization's AI literacy and readiness to adopt generative AI technologies?",
+      "levels": [
+        "1 - There are no AI skills or programs available.",
+        "2 - Individuals or teams are upskilling themselves in AI without a formalized skills program.",
+        "3 - Teams are building skills through external AI programs or building specific skills programs for their business unit.",
+        "4 - There is a formalized AI skills program built targeting AI literacy at different levels (i.e. AI for business leaders, AI for developers integrating AI capabilities via pretrained models, AI for Data Scientists training and fine-tuning models, Training, Fine Tuning or using Foundation Models.",
+        "5 - AI skills programs are integrated across the organization and skills can be measured at the individual level, team level and business units. AI skills programs are updated frequently to build new competencies based on new technologies."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q48",
+      "number": 48,
+      "section": "Governance",
+      "category": "Portfolio Management",
+      "area": "GOV-01",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "Do you have an up-to-date and reliable application inventory with accurate metadata on the applications? Where is this information stored and how is it maintained?",
+      "levels": [
+        "1 - No inventory repositories exist.",
+        "2 - Manually collected application or infrastructure data exists. The data is manually updated, and accuracy cannot be verified.",
+        "3 - CMDB or other application or infrastructure repository exists. Data accuracy cannot be confirmed.",
+        "4 - CMDB or other application or infrastructure repository exists. Data is accurate but not automatically updated.",
+        "5 - Configuration Management Database (CMDB) or other application or infrastructure repository exists. The data in the CMDB is accurate, and there are automated mechanisms to ensure data accuracy."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q49",
+      "number": 49,
+      "section": "Governance",
+      "category": "Portfolio Management",
+      "area": "GOV-01",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "In order to produce accurate estimates of migration costs, it is important to have good baseline data: Do you have a complete and accurate accounting and configuration data set? Do you have the ability to report and track on all resources deployed in the cloud?",
+      "levels": [
+        "1 - We don't track asset data.",
+        "2 - Manually collected application or infrastructure data exists. The data is manually updated, and accuracy cannot be verified.",
+        "3 - We employ a tool for asset tracking.",
+        "4 - We employ a CMDB type of tool and track more than just assets.",
+        "5 - We employ a tool and have processes in place to ensure that it is reasonably accurate."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q50",
+      "number": 50,
+      "section": "Governance",
+      "category": "Portfolio Management",
+      "area": "GOV-01",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "Do you have a DB migration and modernization strategy that accounts for your existing vendor relationships and licensing agreements? Is your IT spend for DB activities well understood and in line with expectations?",
+      "levels": [
+        "1 - Unclear DB portfolio or strategy, ownership of relationships unknown.",
+        "2 - Unclear DB portfolio or strategy, ownership understood but unclear on implementation plans.",
+        "3 - Somewhat clear DB estate/spend, ownership understood but unclear on implementation plans.",
+        "4 - Well-understood DB estate/spend with clear objectives but no implementation planned or in motion yet.",
+        "5 - Well-understood DB estate/spend with clear objectives regarding migration,  modernization, and implementation in progress."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q51",
+      "number": 51,
+      "section": "Governance",
+      "category": "Portfolio Management",
+      "area": "GOV-01",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "Do you have an application migration and modernization strategy that accounts for the rearchitecting of monolithic, legacy, or self-managed applications? Is there a re-architecture strategy in place to leverage modern cloud native paradigms such as server-less to improve agility / lower costs? Are there any significant/foundational tech decisions/changes that are currently under consideration?",
+      "levels": [
+        "1 - Unclear application strategy, ownership of relationships unknown.",
+        "2 - Unclear application strategy, ownership understood but unclear on implementation plans.",
+        "3 - Somewhat clear application strategy, ownership understood but unclear on implementation plans.",
+        "4 - Well-understood application strategy with clear objectives but no implementation planned or in motion yet.",
+        "5 - Well-understood application strategy with clear objectives regarding migration, modernization, and implementation in progress."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q52",
+      "number": 52,
+      "section": "Governance",
+      "category": "Service Delivery Management",
+      "area": "GOV-02",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "Do your infrastructure, applications and services have well-defined SLAs and OLAs? Have you examined support options and selected an AWS or third-party support option that considers your tolerance for downtime and vendor responsiveness?",
+      "levels": [
+        "1 - No standard SLAs or OLAs exist.",
+        "2 - Application categories are not defined. SLAs and OLAs are not communicated within the organization.",
+        "3 - Applications are mostly categorized into broad tiers but not tied to SLAs or OLAs.",
+        "4 - Applications are categorized into broad tiers to support SLAs or OLAs.",
+        "5 - Applications are categorized into well-defined tiers that drive standard SLAs or OLAs (e.g., Mission-Critical, Critical, Important). This data can help drive things like the need for high availability architecture or the definition of the  disaster recovery approach. In addition, it will help provide clear standards to ensure applications perform well on AWS as they did on premises."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q53",
+      "number": 53,
+      "section": "Governance",
+      "category": "Program & Project Management",
+      "area": "GOV-03",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "Do you have mature and disciplined project and program management capabilities? What type of project management methodologies do you use (for example, agile, scrum, waterfall)?",
+      "levels": [
+        "1 - We do not have agile methodology experience.",
+        "2 - We maintain traditional project management practices with some adoption of agile, scrum, or XP methodologies.",
+        "3 - We are aware of agile and scrum practices but does not follow methodologies for project management tasks.",
+        "4 - We have high level understanding of agile, scrum, or XP methodologies. Some resources are trained and available to drive work streams.",
+        "5 - We have the ability to deliver projects leveraging agile or XP methodologies. There are resources trained as Scrum masters who are available to drive work streams. The role and responsibilities of product owners are well understood. Tools (such as Jira) exist to support agile delivery."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q54",
+      "number": 54,
+      "section": "Governance",
+      "category": "Program & Project Management",
+      "area": "GOV-03",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "Have you determined the migration or modernization delivery partner and approach?",
+      "levels": [
+        "1 - No consideration given yet to who will deliver the work.",
+        "2 - Open discussion of roles and responsibilities without formal consensus or actions present.",
+        "3 - Active mapping and discussion of accountable and responsible parties for the delivery of the Mobilize and migration.",
+        "4 - We have discussed accountable and responsible parties for delivery of the Mobilize and migration efforts with no documented decision.",
+        "5 - We have determined who will be accountable and responsible for the delivery of the migration (delivery partner, ProServe, internal resources). [Please note the name of accountable party and procurement approach.]"
+      ],
+      "module": null
+    },
+    {
+      "id": "Q55",
+      "number": 55,
+      "section": "Governance",
+      "category": "Program & Project Management",
+      "area": "GOV-03",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "Do you have a detailed cloud migration or modernization plan? Has it been communicated to the impacted workload owners?",
+      "levels": [
+        "1 - No plan or approach exists.",
+        "2 - Cloud migration approach is actively being discussed.",
+        "3 - Cloud migration plan development is in process.",
+        "4 - Detailed cloud migration plan has been created but not communicated to impacted workload owners.",
+        "5 - Detailed cloud migration plan has been created and communicated to impacted workload owners."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q56",
+      "number": 56,
+      "section": "Governance",
+      "category": "Continuous Integration & Continuous Delivery",
+      "area": "GOV-04",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "Do you apply CI/CD or application lifecycle management (ALM) practices across the application portfolio? Do you have DevOps capabilities and automated deployment and/or automated builds? How are these releases integrated with your change management process?",
+      "levels": [
+        "1 - Builds and deployments are performed manually.",
+        "2 - DevOps culture is not well understood or practices. CI/CD or automated builds and deployment benefits have not been discussed.",
+        "3 - DevOps culture is understood but not widely practices. CI/CD or automated builds and deployment benefits are widely understood.",
+        "4 - DevOps culture exists in varying groups. Adoption of CI/CD or automated builds and deployments within various groups.",
+        "5 - Strong DevOps culture exists. Pervasive adoption of CI/CD or automated builds and deployments."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q57",
+      "number": 57,
+      "section": "Governance",
+      "category": "Process Automation",
+      "area": "GOV-05",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "Do you leverage code to instantiate standard architectures? Do you have a service catalog that allows users to see and request service offerings? Is your infrastructure managed through coding or scripting frameworks? Are your configuration management systems updated as changes occur in the environment?",
+      "levels": [
+        "1 - No automation exists for instantiating architectures and infrastructure.",
+        "2 - Standard architectures are in place but manually deployed.",
+        "3 - Some architectures are managed through automated approaches without standards.",
+        "4 - Standard architectures are managed through infrastructure as code (IaC).",
+        "5 - Standard architectures are automatically instantiated via a service catalog or through standard AWS CloudFormation templates."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q58",
+      "number": 58,
+      "section": "Governance",
+      "category": "Quality Management",
+      "area": "GOV-06",
+      "perspective": "governance",
+      "type": "rating",
+      "text": "Do you have automated unit or product testing across key applications or critical functionality?",
+      "levels": [
+        "1 - No automated testing exists.",
+        "2 - Automated testing experience is present but outside of applications in scope for migration.",
+        "3 - Automated testing is actively being developed on applications in scope for migration.",
+        "4 - Low unit test code coverage on applications in scope for migration (between 35-70%).",
+        "5 - High unit test code coverage on applications in scope for migration (above 70-80%)."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q59",
+      "number": 59,
+      "section": "Operations",
+      "category": "Cloud Service Management",
+      "area": "OPS-01",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "Do you have well-documented operational processes and runbooks? Have your operational processes and runbooks been tailored to AWS?",
+      "levels": [
+        "1 - No tailoring of operational processes for AWS.",
+        "2 - Operational processes are actively under discussion and review for cloud adoption.",
+        "3 - Some operational processes have been created to take advantage of automation opportunities provided by AWS.",
+        "4 - Some operational processes have been redesigned or created to take advantage of the automation opportunities provided by AWS.",
+        "5 - Operational processes have been redesigned to take advantage of the automation opportunities provided by AWS. For example, automated notification of incidents."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q60",
+      "number": 60,
+      "section": "Operations",
+      "category": "Cloud Service Management",
+      "area": "OPS-01",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "Do you test your operational capabilities at a regular cadence to ensure that people, processes, and tools are being tailored to AWS (chaos testing)?",
+      "levels": [
+        "1 - No tailoring of operational testing processes for AWS.",
+        "2 - Operational testing processes are actively under discussion and review for cloud adoption.",
+        "3 - Some operational testing processes have been created to take advantage of automation opportunities provided by AWS.",
+        "4 - Some operational testing processes have been redesigned or created to take advantage of the automation opportunities provided by AWS.",
+        "5 - Operational testing processes have been redesigned to take advantage of the automation opportunities provided by AWS (chaos testing). For example, automated notification of incidents as part of game days."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q61",
+      "number": 61,
+      "section": "Operations",
+      "category": "Business Continuity Planning",
+      "area": "OPS-02",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "Has your business continuity plan been adjusted or enhanced to account for cloud capabilities?",
+      "levels": [
+        "1 - BCP/DR approach on AWS has not been considered.",
+        "2 - Considerations and discussion of a BCP/DR approach are in process.",
+        "3 - BCP or DR capabilities are actively being translated to compare against AWS services related to HA or DR capabilities.",
+        "4 - Business continuity planning (BCP) or DR capabilities have been evaluated to take advantage of AWS HA or DR capabilities. Decisions for modification have not reached agreement.",
+        "5 - Business continuity or disaster recovery (DR) capabilities have been modified to take advantage of AWS high availability (HA) or DR capabilities. For example, instead of using hot/cold environments,  applications might leverage a Multi-AZ architecture."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q62",
+      "number": 62,
+      "section": "Operations",
+      "category": "Business Continuity Planning",
+      "area": "OPS-02",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "Have your backup processes been tailored to take advantage of AWS storage services (such as Amazon S3)?",
+      "levels": [
+        "1 - Backup approach has not been revisited to take advantage of AWS.",
+        "2 - Backup approach is tied to non-cloud supported vendors or methods. Evaluation of new methods or processes is being discussed but not started.",
+        "3 - Backup approach is tied to specific vendors and being evaluated for running in the cloud. Evaluation is actively under way for cloud support of existing systems or new SaaS offerings.",
+        "4 - Backup approach has been evaluated to take advantage of AWS storage service offerings (for example, leveraging S3 One Zone-Infrequent Access or S3 Glacier for backing up databases).",
+        "5 - Backup approach has been revised to take advantage of AWS storage service offerings (for example, active use of Amazon S3 One Zone-Infrequent Access or Amazon S3 Glacier services)."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q63",
+      "number": 63,
+      "section": "Operations",
+      "category": "Incident & Problem Management",
+      "area": "OPS-03",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "Have your incident and problem management processes been adjusted for infrastructure and services running in the cloud?",
+      "levels": [
+        "1 -  No formal incident management processes documented and enforced.",
+        "2 - No integration or adjustment of incident management processes with AWS capabilities or services.",
+        "3 - Review and evaluation of incident management and problem management processes to support AWS capabilities.",
+        "4 - Incident and problem management processes' use of AWS capabilities has been evaluated and revisions are in process or pending approval.",
+        "5 - Incident and problem management processes revised to make use of AWS capabilities such as Amazon CloudWatch or AWS CloudTrail. This could mean integrating CloudWatch into Remedy or other incident management tools."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q64",
+      "number": 64,
+      "section": "Operations",
+      "category": "Change & Configuration Management",
+      "area": "OPS-04",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "Have your change and configuration management processes been adjusted for cloud infrastructure and applications (for example, usage of Amazon Machine Images (AMIs) and golden AMIs)?",
+      "levels": [
+        "1 - No configuration and change management processes.",
+        "2 - No revisitation of configuration and change management processes.",
+        "3 - Review and evaluation of configuration and change management processes to support AWS capabilities.",
+        "4 - Change and configuration management processes use of AWS capabilities have been evaluated and revisions are in process or pending approval.",
+        "5 - Change and configuration management processes revised for AWS (for example, making use of AWS OpsWorks and AWS Systems Manager  for managing server configurations). Some best practices include ensuring the solution covers configuration management for all infrastructure components, including AWS resources, OS, and application stacks."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q65",
+      "number": 65,
+      "section": "Operations",
+      "category": "Change & Configuration Management",
+      "area": "OPS-04",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "Do you have a code deployment policy tailored to AWS application stacks (for example, a CI/CD pipeline tailored to AWS)?",
+      "levels": [
+        "1 -  Manual deployments.",
+        "2 - Some code deployment automation processes are found within varying groups, but no standards.",
+        "3 - Standards are in place for code deployment. This could include manual or automated tasks.",
+        "4 - Code deployment process is mostly automated and standardized but might not involve deployment tooling standardization.",
+        "5 - Code deployment processes tailored to AWS leveraging continuous deployment tooling."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q66",
+      "number": 66,
+      "section": "Operations",
+      "category": "Change & Configuration Management",
+      "area": "OPS-04",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "Do you currently have automated patching capabilities? Do you have a patching approach tailored to managing instances in AWS?",
+      "levels": [
+        "1 - No current patching process.",
+        "2 - No revision of patching process is planned.",
+        "3 - Review and evaluation of patch management process to utilize automation capabilities are in process.",
+        "4 - Some automated patching processes are in place. Review and approval of patching process changes to include AWS automation are pending.",
+        "5 - Patching processes have been revised to leverage AWS automation capabilities or Amazon EC2 patch management services."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q67",
+      "number": 67,
+      "section": "Operations",
+      "category": "Performance & Operational Health",
+      "area": "OPS-05",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "Do your performance and operational health dashboards include cloud-based infrastructure and applications? Which tools or capabilities exist for logging, aggregating logs, and log analysis?  Which tools are used for monitoring and performance management? Do you utilize any synthetic transactions and monitoring capabilities?",
+      "levels": [
+        "1 - Logging and monitoring processes do not exist within the organization.",
+        "2 - Logging and monitoring are present but not revised for AWS.",
+        "3 - Logging and monitoring tools and processes are under review to leverage CloudWatch and CloudTrail.",
+        "4 - Logging and monitoring tools and process integration testing of leveraging CloudWatch and CloudTrail are in process or under review for approval.",
+        "5 - Logging and monitoring tools and processes have been revised to leverage CloudWatch and CloudTrail. For example, integrating CloudTrail events into Splunk or SumoLogic."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q68",
+      "number": 68,
+      "section": "Operations",
+      "category": "Asset Management",
+      "area": "OPS-06",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "If you use an IT Service Management tool such as ServiceNow, do you have an integration strategy defined with AWS services?",
+      "levels": [
+        "1 - Assets, incidents, change requests, and provisioning capabilities and processes aren't implemented and ITSM tooling doesn't exist.",
+        "2 - No implementation of assets, incidents, change requests, and provisioning capabilities in customer's ITSM tooling.",
+        "3 - Assets, incidents, change requests, and provisioning capabilities are available but not reportable or integrated with ITSM tooling.",
+        "4 - Assets, incidents, change requests, and provisioning capabilities are reportable but not integrated with ITSM tooling.",
+        "5 - Assets, incidents, change requests, and provisioning capabilities from customer accounts are integrated with customer's ITSM tooling."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q69",
+      "number": 69,
+      "section": "Operations",
+      "category": "Asset Management",
+      "area": "OPS-06",
+      "perspective": "operations",
+      "type": "rating",
+      "text": "Do you have a tagging strategy (allocating the cost for each line of business) defined and enforced for AWS resources? Do you understand how it helps control and monitor AWS spend?",
+      "levels": [
+        "1 - Tagging strategy does not exist.",
+        "2 - Controls or enforcement of tagging is not present.",
+        "3 - Some tagging enforcement is present but is applied manually.",
+        "4 - Tagging process is enforceable and is in process of being automated.",
+        "5 - Tagging of resources automated into provisioning process."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q70",
+      "number": 70,
+      "section": "Security",
+      "category": "Security Strategy",
+      "area": "SEC-01",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Have your security policies been updated to accommodate the usage of AWS, and are they aligned to the operating model?",
+      "levels": [
+        "1 - Security policies and responsibilities do not make allowances for the use of the cloud.",
+        "2 - Security policies and responsibility changes for cloud utilization are acknowledged within the organization. Work has yet to be started on updating policies.",
+        "3 - Security policies and responsibilities are under evaluation to make allowances for cloud utilization.",
+        "4 - Security policies and responsibilities have been updated and are pending approval for enforcement and adoption.",
+        "5 - Security policies and responsibilities have been updated to account for the usage of cloud services like AWS."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q71",
+      "number": 71,
+      "section": "Security",
+      "category": "Security Strategy",
+      "area": "SEC-01",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Has your security leadership (CISO or equivalent) signed off on AWS adoption, and have they provided input to migration/modernization discussions?",
+      "levels": [
+        "1 - Information Security organization does not exist within the current organization.",
+        "2 - Information Security organization exists but has not been engaged.",
+        "3 - Information Security has been made aware of the cloud program but is not actively involved in planning or program efforts.",
+        "4 - Information Security holds an active role within the cloud program and planning efforts.",
+        "5 - Senior security leadership such as the CISO are supportive and a strong sponsor of the cloud program."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q72",
+      "number": 72,
+      "section": "Security",
+      "category": "Security Strategy",
+      "area": "SEC-01",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Do you have clearly defined security, risk, and compliance (SRC) governance guiding principles to oversee the implementation of the cloud strategy?",
+      "levels": [
+        "1 - No.",
+        "2 - No, but we have identified named individuals to address the gap.",
+        "3 - Yes, but it requires more work.",
+        "4 - Yes, we have clearly defined guiding principles that provide the high scope and considerations for secure cloud adoption.",
+        "5 - Yes, and it's already implemented throughout AWS security governance."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q73",
+      "number": 73,
+      "section": "Security",
+      "category": "Security Strategy",
+      "area": "SEC-01",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Has your infrastructure security approach been modified for AWS? This includes creating custom templates to configure AWS services to meet requirements, implementing security architecture patterns and security operations plays as code, crafting custom security solutions from AWS services, using patch management strategies like blue/green deployments, reducing the exposed attack surface, and validating the efficacy of deployments.",
+      "levels": [
+        "1 - No consideration given yet to revising the infrastructure security approach.",
+        "2 - Some infrastructure security approaches have been evaluated throughout various departments or groups. No discussion to standardize on methods or tools.",
+        "3 - Evaluation of current infrastructure security approaches is in process, including the evaluation of custom templates, security and operations playbooks, and validation efforts.",
+        "4 - Infrastructure security approach has been evaluated and is pending approval for standardization and application.",
+        "5 - Infrastructure security approach has been revised, which includes creating custom templates to configure AWS services to meet requirements, implementing security architecture patterns and security operations plays as code, crafting custom security solutions from AWS services, using patch management strategies like blue/green deployments, reducing the exposed attack surface, and validating the efficacy of deployments."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q74",
+      "number": 74,
+      "section": "Security",
+      "category": "Security Reference Architecture",
+      "area": "SEC-02",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Have your identity and access management approach and integration been completed with AWS accounts? This would include entitlement mapping/grants/audit, secret material management, enforcing separation of duties and least privilege access, just-in-time privilege management, and reducing reliance on long-term credentials.",
+      "levels": [
+        "1 - Identity and access management integration hasn't been considered.",
+        "2 - Discussion of identity and access management approach and integration with AWS accounts and services has been completed. Actions have been discussed but not implemented.",
+        "3 - Evaluation of identity and access management approach and integration with AWS accounts and services is in process.",
+        "4 - Identity and access management approach and integration activities are being actively deployed with AWS accounts and services. Pending completion of implementation and provisioning integration efforts.",
+        "5 - Identity and access management approach and integration have been completed with AWS accounts and services. Includes entitlement mapping/grants/audit, secret material management, enforcing separation of duties and least privilege access, just-in-time privilege management, and reducing reliance on long term credentials."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q75",
+      "number": 75,
+      "section": "Security",
+      "category": "Governance, Risk & Compliance",
+      "area": "SEC-03",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Control framework mapping (assurance framework and security requirements) helps you gain a better understanding of security capabilities provided by AWS. Do you understand control framework mapping and the shared responsibility model per AWS documentation and services?",
+      "levels": [
+        "1 - No understanding of AWS control framework.",
+        "2 - Limited understanding of AWS control framework is present within the organization.",
+        "3 - Customer is actively seeking understanding of control frameworks (assurance and security frameworks). Workshops have been scheduled or discussed with AWS.",
+        "4 - Current evaluation of control frameworks based on the AWS Shared Responsibility Model is in process. Mapping has not yet been completed, but awareness and understanding broadly exist.",
+        "5 - Customer's current control framework has been mapped based on the AWS Shared Responsibility Model. Customer knows what they control and that they are responsible for security in the cloud."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q76",
+      "number": 76,
+      "section": "Security",
+      "category": "Governance, Risk & Compliance",
+      "area": "SEC-03",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Do you have a risk framework such as the NIST CSF or ISO 31000:2018 that you are applying to your cloud adoption (processes associated with Security Steering Committee, IT Governance Board, etc.)? Are there any gaps in oversight?",
+      "levels": [
+        "1 - No.",
+        "2 - Not sure.",
+        "3 - Yes, we are applying our existing operational/IT risk framework.",
+        "4 - Yes, we have created and will apply a cloud-specific risk framework.",
+        "5 - Yes, we are applying our existing operational/IT risk framework, which is based on widely adopted standards (for example, ISO31000, COBIT, NIST)."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q77",
+      "number": 77,
+      "section": "Security",
+      "category": "Governance, Risk & Compliance",
+      "area": "SEC-03",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Is the organization's business environment well understood, prioritized, and incorporating security risk to critical functions and dependencies for delivery of services?",
+      "levels": [
+        "1 - Organization's business environment has considered critical services, although it might not have all dependencies understood to ensure uninterrupted delivery.",
+        "2 - Organization's business environment includes analysis of critical services and dependencies and is developing towards a program to sustain critical services.",
+        "3 - Organization's business environment is within an established understanding and prioritization of activities to ensure that critical services are resilient.",
+        "4 - Organization's business environment operates under a risk management program that balances the organization's objectives and prioritization of activities across services.",
+        "5 - Organization's business environment operates under a continuous improvement model undergoing updates according to business changes and demand."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q78",
+      "number": 78,
+      "section": "Security",
+      "category": "Governance, Risk & Compliance",
+      "area": "SEC-03",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Are you able to adjust the SRC risk appetite and SRC risk tolerance levels for your cloud initiative(s) to meet your business goals? Can you share the methodology for adjusting risk tolerance?",
+      "levels": [
+        "1 - Risk tolerance is not contemplated as part of the program's key risk decisions.",
+        "2 - Risk tolerance is applied through discussion on a case-by-case basis or as a reaction to mitigation efforts that have escalated.",
+        "3 - Risk tolerance is applied by management for most decision making and is expressed in documented form and in discussions.",
+        "4 - Risk tolerance is well documented and supported by more detailed elements to aid in risk decision making.",
+        "5 - Risk tolerance is suitably applied across organization's decision making and undergoes updates as a result of operational findings and improvements."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q79",
+      "number": 79,
+      "section": "Security",
+      "category": "Governance, Risk & Compliance",
+      "area": "SEC-03",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Do you currently leverage a framework/methodology to evaluate criteria such as policy, regulation, and performance to make decisions?",
+      "levels": [
+        "1 - Decision system is informal or ad hoc, and is not an approved process with tracking.",
+        "2 - Decision system identifies key stakeholders for input but has inconsistent criteria.",
+        "3 - Decision system is an approved process flow and includes relevant criteria.",
+        "4 - Decision system utilizes clear and measurable data points for each evaluation.",
+        "5 - Decision system undergoes business-specific optimization at periodic intervals."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q80",
+      "number": 80,
+      "section": "Security",
+      "category": "Governance, Risk & Compliance",
+      "area": "SEC-03",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Are their data governance policies and practices in place? What are the relevant regulations or compliance requirements (for example, GDPR, HIPAA, PCI-DSS)?",
+      "levels": [
+        "1 - There are no policies related to regulatory compliance",
+        "2 - Individuals teams focus on compliance with regulations but there is no company wide policy",
+        "3 - There are company wide guidelines for compliance with regulations such as data protection laws, anti-discrimination laws and industry specific guidelines (i.e. GDPR, CCPA, HIPAA, etc.)",
+        "4 - Compliance with regulations are continuously tracked and a unified approach is consistently enforced throughout the organization",
+        "5 - AI is built, adopted and implemented in a responsible way in alignment with industry regulations (i.e. GDPR, CCPA, HIPAA, etc.) and there is additional focus on assessing the impact of future AI-specific regulation currently in motion in different geographies and/or  participating in industry forums to influence regulation design positively"
+      ],
+      "module": null
+    },
+    {
+      "id": "Q81",
+      "number": 81,
+      "section": "Security",
+      "category": "Lifecycle Security Capabilities",
+      "area": "SEC-04",
+      "perspective": "security",
+      "type": "rating",
+      "text": "How do you currently control ingress/egress from your corporate network, and do you use any network appliances?",
+      "levels": [
+        "1 - Yes, we have a firewall at the edge, but incoming and outgoing traffic are not analyzed.",
+        "2 - Yes, we have a firewall and IPS/IDS at the edge to control and analyze traffic.",
+        "3 - Yes, we have a security stack at the edge that inspects traffic at the network, transport, and application layers.",
+        "4 - Yes, we have a security stack at the edge that inspects traffic at the network, transport, and application layers, and we also have web application filtering and DDoS mitigation protection.",
+        "5 - Yes, we have a security stack at the edge that inspects traffic at the network, transport, and application layers, and we also have web application filtering, distributed denial of service (DDoS) mitigation protection, and data leak protection for outgoing traffic."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q82",
+      "number": 82,
+      "section": "Security",
+      "category": "Lifecycle Security Capabilities",
+      "area": "SEC-04",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Have you determined how to leverage the encryption in transit and encryption at rest capabilities of  AWS? Will AES-256 satisfy your encryption at rest requirements?",
+      "levels": [
+        "1 - Data protection policies or mechanisms are not present within the organization.",
+        "2 - Data protection policies or mechanisms exist within the organization but have not been evaluated to adopt AWS services or features.",
+        "3 - Data protection policies or mechanisms are being evaluated. Some areas of evaluation may include tagging schema, VPN, and data encryption policies.",
+        "4 - We have evaluated data protection mechanisms available within AWS. Implementation plan is actively being developed or deployed within the current environment.",
+        "5 - We have implemented tagging schema, constructed mechanisms to protect data in motion such as VPN and TLS/SSL connections (including AWS Certificate Manager), constructed mechanisms to protect data at rest through encryption at appropriate tiers of their infrastructure, using AWS Key Management Service (AWS KMS) implementation/integration, deploying AWS CloudHSM creating tokenization schemes."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q83",
+      "number": 83,
+      "section": "Security",
+      "category": "DevSecOps Principles",
+      "area": "SEC-05",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Are your security capabilities automatically implemented through automation and DevOps capabilities?",
+      "levels": [
+        "1 - No automated implementation of security policies or controls.",
+        "2 - Discussion of security control automation and AWS account design is present within the organization. Decisions or evaluation efforts have yet to be approved or implemented.",
+        "3 - Evaluation of security by design approaches and automation of security controls is in process.",
+        "4 - Security by design approach is actively being developed or implemented into AWS.",
+        "5 - Security by design approach is incorporated into AWS account design, automation of security controls, and compliance and controls implemented through AWS CloudFormation templates."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q84",
+      "number": 84,
+      "section": "Security",
+      "category": "Security Operations Playbook",
+      "area": "SEC-06",
+      "perspective": "security",
+      "type": "rating",
+      "text": "Are your cloud security operations and processes tested?",
+      "levels": [
+        "1 - No validation of cloud security processes.",
+        "2 - Active discussions are present to implement security tests through simulations or mock drills. Decisions have not been made to implement or develop tests broadly.",
+        "3 - Development of cloud security testing and validation is currently in process.",
+        "4 - Development of cloud security testing  and validation efforts is completed but untested.",
+        "5 - Cloud security readiness has been tested in a simulation or through mock drills."
+      ],
+      "module": null
+    },
+    {
+      "id": "Q85",
+      "number": 85,
+      "section": "Optional - VMC",
+      "category": "VMWare Cloud",
+      "area": "VMC-01",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are you currently a “VMware Shop” or using vSphere for virtualization?",
+      "levels": [],
+      "module": "vmc"
+    },
+    {
+      "id": "Q86",
+      "number": 86,
+      "section": "Optional - VMC",
+      "category": "VMWare Cloud",
+      "area": "VMC-01",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Is accelerating the planning, migration, or time-to-value of your cloud journey essential to your success to meet critical migration deadlines?",
+      "levels": [],
+      "module": "vmc"
+    },
+    {
+      "id": "Q87",
+      "number": 87,
+      "section": "Optional - VMC",
+      "category": "VMWare Cloud",
+      "area": "VMC-01",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "With your transition to the cloud, is it important to maintain skillsets and operations in an effort to manage risk, lower costs, and reduce disruption?",
+      "levels": [],
+      "module": "vmc"
+    },
+    {
+      "id": "Q88",
+      "number": 88,
+      "section": "Optional - VMC",
+      "category": "VMWare Cloud",
+      "area": "VMC-01",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Does your cloud migration include Independent Software Vendor (ISV) solutions that are supported on vSphere, but not EC2?",
+      "levels": [],
+      "module": "vmc"
+    },
+    {
+      "id": "Q89",
+      "number": 89,
+      "section": "Optional - VMC",
+      "category": "VMWare Cloud",
+      "area": "VMC-01",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Does your cloud migration include workloads that require GxP, PCI, HIPAA, GDPR, FedRAMP, or other certifications? Would it be beneficial to avoid the time and cost of re-certification/validation?",
+      "levels": [],
+      "module": "vmc"
+    },
+    {
+      "id": "Q90",
+      "number": 90,
+      "section": "Optional - VMC",
+      "category": "VMWare Cloud",
+      "area": "VMC-01",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are you currently using any vRealize Suite products for your current operations?",
+      "levels": [],
+      "module": "vmc"
+    },
+    {
+      "id": "Q91",
+      "number": 91,
+      "section": "Optional - VMC",
+      "category": "VMWare Cloud",
+      "area": "VMC-01",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are you using any other VMware Product Tools to compliment or enhance your current vSphere implementation?",
+      "levels": [],
+      "module": "vmc"
+    },
+    {
+      "id": "Q92",
+      "number": 92,
+      "section": "Optional - Storage",
+      "category": "Storage",
+      "area": "STO-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What on-premises storage workloads you are considering for AWS migration?",
+      "levels": [],
+      "module": "storage"
+    },
+    {
+      "id": "Q93",
+      "number": 93,
+      "section": "Optional - Storage",
+      "category": "Storage",
+      "area": "STO-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What is the total capacity of storage workloads for migration to AWS (TB)?",
+      "levels": [],
+      "module": "storage"
+    },
+    {
+      "id": "Q94",
+      "number": 94,
+      "section": "Optional - Storage",
+      "category": "Storage",
+      "area": "STO-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What on-premises Applications are accessing the above storage workloads?",
+      "levels": [],
+      "module": "storage"
+    },
+    {
+      "id": "Q95",
+      "number": 95,
+      "section": "Optional - Storage",
+      "category": "Storage",
+      "area": "STO-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Are there any regulatory, organizational data storage compliance considerations after migration to AWS?",
+      "levels": [],
+      "module": "storage"
+    },
+    {
+      "id": "Q96",
+      "number": 96,
+      "section": "Optional - Storage",
+      "category": "Storage",
+      "area": "STO-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What infrastructure is used for Backups?",
+      "levels": [],
+      "module": "storage"
+    },
+    {
+      "id": "Q97",
+      "number": 97,
+      "section": "Optional - Storage",
+      "category": "Storage",
+      "area": "STO-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Do you have storage based DR/Replication setup?",
+      "levels": [],
+      "module": "storage"
+    },
+    {
+      "id": "Q98",
+      "number": 98,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Overview",
+      "area": "MIC-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What are the business functions and domains supported by the Microsoft Workload(s)?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q99",
+      "number": 99,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Overview",
+      "area": "MIC-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What are the customer's key pain points or modernization drivers for their Microsoft Workloads? (Example: Cost, Agility)?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q100",
+      "number": 100,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Overview",
+      "area": "MIC-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Who is operating or managing the customer's Windows-environment and licensing? (Example: in-house, specific GSI)?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q101",
+      "number": 101,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Overview",
+      "area": "MIC-01",
+      "perspective": null,
+      "type": "text",
+      "text": "How many of the servers are running on legacy Windows operating systems (2012 R2 & older)?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q102",
+      "number": 102,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Overview",
+      "area": "MIC-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Does the customer have a clear understanding of their resource (CPU, memory, IOPS, throughput) utilization?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q103",
+      "number": 103,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Overview",
+      "area": "MIC-01",
+      "perspective": null,
+      "type": "text",
+      "text": "How is the customer virtualized on premises today, VMware/Hyper-V/Bare metal?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q104",
+      "number": 104,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Overview",
+      "area": "MIC-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Does the customer have a clear mapping of application dependencies?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q105",
+      "number": 105,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Overview",
+      "area": "MIC-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What is the main development language for applications? C#? .NET (Core or Framework)?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q106",
+      "number": 106,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Overview",
+      "area": "MIC-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What are the main version(s) of SQL Server the customer is using in production? Main versions of SQL Server for dev/test environments?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q107",
+      "number": 107,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Overview",
+      "area": "MIC-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Does the customer want to deploy a new AWS-based Active Directory environment, or extend their existing on-premises AD to AWS?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q108",
+      "number": 108,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Migration Estimate",
+      "area": "MIC-02",
+      "perspective": null,
+      "type": "text",
+      "text": "Has the customer leveraged the Optimization and Licensing Assessment (OLA) program?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q109",
+      "number": 109,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Migration Estimate",
+      "area": "MIC-02",
+      "perspective": null,
+      "type": "text",
+      "text": "How many Windows servers are in scope of migration?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q110",
+      "number": 110,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Migration Estimate",
+      "area": "MIC-02",
+      "perspective": null,
+      "type": "text",
+      "text": "How many Windows servers are production vs. dev/test?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q111",
+      "number": 111,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Migration Estimate",
+      "area": "MIC-02",
+      "perspective": null,
+      "type": "text",
+      "text": "Does the scope of migration include SQL Server? If yes, how many databases?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q112",
+      "number": 112,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Migration Estimate",
+      "area": "MIC-02",
+      "perspective": null,
+      "type": "text",
+      "text": "Does the customer want to bring their own Windows Server licenses (BYOL) to Dedicated Hosts or leverage license-included options on shared tenancy EC2?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q113",
+      "number": 113,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Migration Estimate",
+      "area": "MIC-02",
+      "perspective": null,
+      "type": "text",
+      "text": "Does the customer want to bring their own SQL Server licenses (BYOL) to Amazon EC2 or consider license included options on Amazon EC2 or Amazon RDS?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q114",
+      "number": 114,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Migration Estimate",
+      "area": "MIC-02",
+      "perspective": null,
+      "type": "text",
+      "text": "If customer is considering BYOL for SQL Server, do they have active Software Assurance (SA) on those SQL Server licenses?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q115",
+      "number": 115,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Migration Estimate",
+      "area": "MIC-02",
+      "perspective": null,
+      "type": "text",
+      "text": "What is the average CPU/RAM per VM?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q116",
+      "number": 116,
+      "section": "Optional - Microsoft",
+      "category": "Microsoft Migration Estimate",
+      "area": "MIC-02",
+      "perspective": null,
+      "type": "text",
+      "text": "What is the storage allocated for the scope of migration? How much is used vs free?",
+      "levels": [],
+      "module": "microsoft"
+    },
+    {
+      "id": "Q117",
+      "number": 117,
+      "section": "Optional - NetworkTrans",
+      "category": "Connectivity to Datacenters",
+      "area": "NET-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Provide details on how many datacenters you have today, how they are connected and their locations.",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q118",
+      "number": 118,
+      "section": "Optional - NetworkTrans",
+      "category": "Connectivity to Datacenters",
+      "area": "NET-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Provide details of any existing connectivity to AWS and/or other clouds.",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q119",
+      "number": 119,
+      "section": "Optional - NetworkTrans",
+      "category": "Connectivity to Datacenters",
+      "area": "NET-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Are there any additional requirements related to datacenter connectivity?",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q120",
+      "number": 120,
+      "section": "Optional - NetworkTrans",
+      "category": "Connectivity within AWS",
+      "area": "NET-02",
+      "perspective": null,
+      "type": "text",
+      "text": "Provide details on workloads in different geographies. How many AWS regions do you plan to use?",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q121",
+      "number": 121,
+      "section": "Optional - NetworkTrans",
+      "category": "Connectivity within AWS",
+      "area": "NET-02",
+      "perspective": null,
+      "type": "text",
+      "text": "If you already have workloads in AWS today, how do you interconnect them within AWS?",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q122",
+      "number": 122,
+      "section": "Optional - NetworkTrans",
+      "category": "Connectivity to Branches",
+      "area": "NET-03",
+      "perspective": null,
+      "type": "text",
+      "text": "Provide details on how you connect your branches and datacenters today. What are your key business initiatives with WAN architecture? What are the geographical locations of branches and how many of them do you have?",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q123",
+      "number": 123,
+      "section": "Optional - NetworkTrans",
+      "category": "Connectivity to Branches",
+      "area": "NET-03",
+      "perspective": null,
+      "type": "text",
+      "text": "Do you have plans to connect branches directly to AWS cloud as workloads migrate to the cloud?",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q124",
+      "number": 124,
+      "section": "Optional - NetworkTrans",
+      "category": "Connectivity to Branches",
+      "area": "NET-03",
+      "perspective": null,
+      "type": "text",
+      "text": "Provide details on how you secure your branches today and what you plan to do in the future (e.g. Zero Trust, Secure Access Service Edge initiatives).",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q125",
+      "number": 125,
+      "section": "Optional - NetworkTrans",
+      "category": "Connectivity to Internet",
+      "area": "NET-04",
+      "perspective": null,
+      "type": "text",
+      "text": "Provide details if your AWS workloads need to have outbound or inbound Internet connectivity.",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q126",
+      "number": 126,
+      "section": "Optional - NetworkTrans",
+      "category": "Connectivity to Internet",
+      "area": "NET-04",
+      "perspective": null,
+      "type": "text",
+      "text": "Provide details on how your branch and remote users access the Internet today, and if you plan to use AWS for Internet egress in future.",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q127",
+      "number": 127,
+      "section": "Optional - NetworkTrans",
+      "category": "Network Security",
+      "area": "NET-05",
+      "perspective": null,
+      "type": "text",
+      "text": "How are you securing workloads in your current environment?",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q128",
+      "number": 128,
+      "section": "Optional - NetworkTrans",
+      "category": "Network Security",
+      "area": "NET-05",
+      "perspective": null,
+      "type": "text",
+      "text": "Do you plan to use AWS native security controls or third party network security appliances?",
+      "levels": [],
+      "module": "network"
+    },
+    {
+      "id": "Q129",
+      "number": 129,
+      "section": "Optional - Database",
+      "category": "Database Portfolio",
+      "area": "DAT-01",
+      "perspective": null,
+      "type": "text",
+      "text": "How would you describe your relationship with commercial database vendors such as Oracle or Microsoft?",
+      "levels": [],
+      "module": "database"
+    },
+    {
+      "id": "Q130",
+      "number": 130,
+      "section": "Optional - Database",
+      "category": "Database Portfolio",
+      "area": "DAT-01",
+      "perspective": null,
+      "type": "text",
+      "text": "When do the support contracts with Oracle and/or Microsoft end? This year or next 1-2 years?",
+      "levels": [],
+      "module": "database"
+    },
+    {
+      "id": "Q131",
+      "number": 131,
+      "section": "Optional - Database",
+      "category": "Database Portfolio",
+      "area": "DAT-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Do you know how many databases do you have in total? Or what is your IT spend towards database platforms?",
+      "levels": [],
+      "module": "database"
+    },
+    {
+      "id": "Q132",
+      "number": 132,
+      "section": "Optional - Database",
+      "category": "Database Portfolio",
+      "area": "DAT-01",
+      "perspective": null,
+      "type": "text",
+      "text": "How many ISV/COTS packages do you have versus custom/inhouse developed?",
+      "levels": [],
+      "module": "database"
+    },
+    {
+      "id": "Q133",
+      "number": 133,
+      "section": "Optional - Database",
+      "category": "Database Portfolio",
+      "area": "DAT-01",
+      "perspective": null,
+      "type": "text",
+      "text": "How many applications/databases are in EOSL (End of Service Life) ?",
+      "levels": [],
+      "module": "database"
+    },
+    {
+      "id": "Q134",
+      "number": 134,
+      "section": "Optional - Outpost",
+      "category": "Outpost",
+      "area": "OUT-01",
+      "perspective": null,
+      "type": "rating",
+      "text": "Do you have the willingness and operational capability to run additional servers on premises?",
+      "levels": [
+        "1 - No we do not want to operate anything on premises, and do not have the know how",
+        "2 - We do operate a few machines on premises but this is by exception, we have some skills in house but mostly rely on contractors",
+        "3 - We run several machines on premises with the help of a small dedicated team, and plan to keep doing so after our migration",
+        "4 - We will keep on running part of our infrastructure on premises and we  have a dedicated team that will continue to operate  after the migration",
+        "5 - We operate a large on premises infrastructure, and will keep on doing so for part of our workloads. A dedicated team is running and maintaining on premises capabilities, dealing with a broad array of activities : physical access control, networking, facilities planning and management etc.)"
+      ],
+      "module": "outpost"
+    },
+    {
+      "id": "Q135",
+      "number": 135,
+      "section": "Optional - Outpost",
+      "category": "Outpost",
+      "area": "OUT-01",
+      "perspective": null,
+      "type": "rating",
+      "text": "Do you have lower latency requirement on some workloads than what can be achieved using the nearest region? If so what would be the percentage of these workloads over your total number of workloads?",
+      "levels": [
+        "1 - No, on none of our workloads",
+        "2 - Not really, it would probably not concern any workloads we run",
+        "3 - It may concern a few workloads and/or we have some low latency use cases in mind",
+        "4 - Yes, some well identified workloads",
+        "5 - Yes, a significant percentage of our workloads"
+      ],
+      "module": "outpost"
+    },
+    {
+      "id": "Q136",
+      "number": 136,
+      "section": "Optional - Outpost",
+      "category": "Outpost",
+      "area": "OUT-01",
+      "perspective": null,
+      "type": "rating",
+      "text": "Are you bound either by national or supra-national regulations, or by corporate policy to keep all or part of your data in a given physical location?",
+      "levels": [
+        "1 -  No, there is no specific policy or regulation that would impose this on any of our data",
+        "2 - It is unlikely that we are submitted to such an obligation",
+        "3 - Some internal or external recommendation or guideline states that it is best practice to keep part of our data in a given physical location",
+        "4 - By company policy or Law we are required to store a portion of our data in a given physical location",
+        "5 - There are stringent legal or  corporate requirements imposing that a large portion of our data is stored in a given physical location"
+      ],
+      "module": "outpost"
+    },
+    {
+      "id": "Q137",
+      "number": 137,
+      "section": "Optional - Outpost",
+      "category": "Outpost",
+      "area": "OUT-01",
+      "perspective": null,
+      "type": "rating",
+      "text": "Under which conditions does your policy allow for the return of decommissioned or impaired hardware to a manufacturer?",
+      "levels": [
+        "1 - We do not return any hardware to the manufacturer",
+        "2 - Any decommissioned datastore must be physically retained or destroyed before hardware is returned to the manufacturer",
+        "3 - In some isolated cases we may need to retain hardware",
+        "4 - A cryptographic erase of datastore is sufficient",
+        "5 - There is no specific policy in that regard"
+      ],
+      "module": "outpost"
+    },
+    {
+      "id": "Q138",
+      "number": 138,
+      "section": "Optional - Outpost",
+      "category": "Outpost",
+      "area": "OUT-01",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Do you have at least 1Gbps of bandwidth to the AWS region you want to connect to?",
+      "levels": [],
+      "module": "outpost"
+    },
+    {
+      "id": "Q139",
+      "number": 139,
+      "section": "Optional - Outpost",
+      "category": "Outpost",
+      "area": "OUT-01",
+      "perspective": null,
+      "type": "rating",
+      "text": "Is your connectivity fully redundant?",
+      "levels": [
+        "1 - No, our on premises connectivity is not redundant",
+        "2 - We have implemented some steps towards achieving full redundancy, but did not manage to consistently achieve the availability targeted for our most demanding on premises workloads",
+        "3 - Not fully, but we manage to provide a level of availability that is higher than what is needed for our most demanding workloads on premises",
+        "4 - We are close to achieving full redundancy",
+        "5 - Yes, it is fully redundant"
+      ],
+      "module": "outpost"
+    },
+    {
+      "id": "Q140",
+      "number": 140,
+      "section": "Optional - Outpost",
+      "category": "Outpost",
+      "area": "OUT-01",
+      "perspective": null,
+      "type": "yes_no",
+      "text": "Are your switches and routers running versions of software the vendor currently supports?",
+      "levels": [],
+      "module": "outpost"
+    },
+    {
+      "id": "Q141",
+      "number": 141,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Have you engaged an AWS SAP competency partner or the AWS SAP ProServe team to assist with the migration?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q142",
+      "number": 142,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Does your team have the SAP and AWS skills and capability to drive the project themselves?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q143",
+      "number": 143,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Has the target architecture for SAP on AWS been finalized?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q144",
+      "number": 144,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Does the bill of materials (BOM) for your target SAP on AWS environment reflect planned in place transformations?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q145",
+      "number": 145,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What is the high level project timeline (e.g. start and end dates of migration for various SAP system landscapes)?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q146",
+      "number": 146,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "What are the SAP solutions being migrated?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q147",
+      "number": 147,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Has the migration methodology and tooling been finalized?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q148",
+      "number": 148,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Have processes for monitoring SAP applications and carrying out operational activities like backup/recovery either natively or using an ISV solution after migration to AWS been finalized. Is any required software licensing in place?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q149",
+      "number": 149,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Will you manage the SAP environments post migration or will you rely on a partner to manage them?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q150",
+      "number": 150,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "If you plan to rely on a partner to manage your SAP environments after migration, is the Managed Services partner an AWS certified partner?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q151",
+      "number": 151,
+      "section": "Optional - SAP",
+      "category": "SAP",
+      "area": "SAP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "SAP customers need to have signup for at least business support. Are you aware of that requirement and planning to sign up for business support or enterprise support?",
+      "levels": [],
+      "module": "sap"
+    },
+    {
+      "id": "Q152",
+      "number": 152,
+      "section": "Optional - App Modernization",
+      "category": "App Modernization",
+      "area": "APP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "How satisfied are you with the current operational processes with respect to your ability to proactively monitor the system for issues and conduct RCA on incidents?",
+      "levels": [],
+      "module": "app-modernization"
+    },
+    {
+      "id": "Q153",
+      "number": 153,
+      "section": "Optional - App Modernization",
+      "category": "App Modernization",
+      "area": "APP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Do you have any concerns regarding this system’s ability to support any upcoming business objectives (short/medium term)? (business model innovations, market expansion, etc.)?",
+      "levels": [],
+      "module": "app-modernization"
+    },
+    {
+      "id": "Q154",
+      "number": 154,
+      "section": "Optional - App Modernization",
+      "category": "App Modernization",
+      "area": "APP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Are you able to stand up small autonomous teams that can take a change request through implementation & deployment?",
+      "levels": [],
+      "module": "app-modernization"
+    },
+    {
+      "id": "Q155",
+      "number": 155,
+      "section": "Optional - App Modernization",
+      "category": "App Modernization",
+      "area": "APP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Would you classify any of the workloads in the MRA scope as “monoliths”?",
+      "levels": [],
+      "module": "app-modernization"
+    },
+    {
+      "id": "Q156",
+      "number": 156,
+      "section": "Optional - App Modernization",
+      "category": "App Modernization",
+      "area": "APP-01",
+      "perspective": null,
+      "type": "text",
+      "text": "How satisfied are you with the ease/speed at which you are currently able to make changes / improve your system to meet customer/business demands?",
+      "levels": [],
+      "module": "app-modernization"
+    },
+    {
+      "id": "Q157",
+      "number": 157,
+      "section": "Optional - SaaS",
+      "category": "SaaS",
+      "area": "SAA-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Where are your customers deployed now? Do you currently have a managed service or are all your customers deployed on-prem?",
+      "levels": [],
+      "module": "saas"
+    },
+    {
+      "id": "Q158",
+      "number": 158,
+      "section": "Optional - SaaS",
+      "category": "SaaS",
+      "area": "SAA-01",
+      "perspective": null,
+      "type": "rating",
+      "text": "Can you move your existing SaaS customers (or managed hosted) with minimal customer involvement?",
+      "levels": [
+        "1 - Each customer would have to be re-sold to with new contract, terms and sales cycle.",
+        "2 - Customer would need to be agree to new terms",
+        "3 - Customer would need to make technical changes (eg endpoints, VPNs)",
+        "4 - Customer would need to be informed but there would be no work for the customer",
+        "5 - Change can occur with no impact to customers."
+      ],
+      "module": "saas"
+    },
+    {
+      "id": "Q159",
+      "number": 159,
+      "section": "Optional - SaaS",
+      "category": "SaaS",
+      "area": "SAA-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Can you explain your SaaS roadmap? Do you have differing roadmaps for your on-prem product vs your SaaS? Do you have any version sunsets coming up or planned?",
+      "levels": [],
+      "module": "saas"
+    },
+    {
+      "id": "Q160",
+      "number": 160,
+      "section": "Optional - SaaS",
+      "category": "SaaS",
+      "area": "SAA-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Where do you feel the customer may perceive most value to be gained from your SaaS product - cloud value (increased availability, resiliency, performance and security), economic value (cost), or product value (faster feature role out; features unique to cloud offering)?",
+      "levels": [],
+      "module": "saas"
+    },
+    {
+      "id": "Q161",
+      "number": 161,
+      "section": "Optional - SaaS",
+      "category": "SaaS",
+      "area": "SAA-01",
+      "perspective": null,
+      "type": "text",
+      "text": "Does your system rely on separately provisioned infrastructure for each tenant?",
+      "levels": [],
+      "module": "saas"
+    },
+    {
+      "id": "Q162",
+      "number": 162,
+      "section": "Optional - SaaS",
+      "category": "SaaS",
+      "area": "SAA-01",
+      "perspective": null,
+      "type": "text",
+      "text": "How automated is your tenant on-boarding/provisioning process?",
+      "levels": [],
+      "module": "saas"
+    }
+  ]
+}

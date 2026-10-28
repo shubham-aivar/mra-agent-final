@@ -1,0 +1,1 @@
+The CIO said moving to the cloud is the top priority for the next two years. The business case was approved in March, and the budget is capped at two million for the first migration wave. Business outcomes and KPIs for the migration are not agreed yet.
