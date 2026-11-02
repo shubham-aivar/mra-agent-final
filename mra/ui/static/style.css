@@ -52,6 +52,14 @@ pre { white-space:pre-wrap; background:#fafbfc; border:1px solid var(--line); bo
 iframe.preview { width:100%; height:78vh; border:1px solid var(--line); border-radius:6px; background:#fff; }
 details { margin:6px 0; } summary { cursor:pointer; }
 .clamp { max-width:420px; }
+.qdetail { background:#f8fafc; border:1px solid var(--line); border-radius:6px; padding:8px 12px; margin:8px 0; }
+.qdetail .qhead { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+.qdetail .qtext { margin:6px 0; font-weight:600; }
+.qdetail .qrate { margin:4px 0; }
+.qdetail .qhint { margin:6px 0 2px; color:var(--muted); font-size:13px; }
+.qdetail ol.levels { margin:6px 0 2px 20px; padding:0; }
+.qdetail ol.levels li { margin:2px 0; }
+.qdetail ol.levels li.cur { background:var(--amber); font-weight:600; border-radius:3px; padding:0 4px; }
 ul.plain { margin:4px 0 4px 18px; padding:0; }
 h3.first { margin-top:0; }
 input.auto { width:auto; }

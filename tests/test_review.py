@@ -59,7 +59,7 @@ def test_a_blank_rating_is_not_resolved_with_a_note(svc, rset, golden):
 def test_the_gate_lists_everything_and_blank_ratings_block(svc, rset, golden):
     svc.run(rset(golden["ratings"]), "tester")
     b = svc.status(SID)["blockers"]
-    assert any("1 rating(s) are blank (Q42)" in x for x in b)
+    assert any("1 rating(s) are blank (Q42 (" in x for x in b)
     assert any("no decision on the action" in x for x in b) and any("not resolved" in x for x in b)
     assert any("not confirmed" in x for x in b) and any("report details missing" in x for x in b)
     with pytest.raises(ValueError, match="blank"):

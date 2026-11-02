@@ -7,16 +7,26 @@ from __future__ import annotations
 from .ingram_deck import INGRAM_LABEL
 
 
+def _qline(m: dict, qid: str) -> str:
+    v = m["question_views"].get(qid)
+    return f"{qid} ({v['category']}): {v['text']}" if v else qid
+
+
+def _qtail(v: dict) -> str:
+    q = v.get("question")
+    return f" | Question ({q['category']}): {q['text']}" if q else ""
+
+
 def render_todo(m: dict, template: bytes | None = None) -> bytes:
     L = [f"# Open items before release: {m['customer']}", "", m["status_note"], ""]
     sec = []
     if m["blank_ratings"]:
-        sec.append(("Blank ratings (the groups that contain them show as Incomplete)", [f"{q}" for q in m["blank_ratings"]]))
+        sec.append(("Blank ratings (the groups that contain them show as Incomplete)", [_qline(m, q) for q in m["blank_ratings"]]))
     if m["details_missing"]:
         sec.append(("Report details to fill in (python -m mra meta)", m["details_missing"]))
     open_items = [v for v in m["validation"] if v["resolution"] == "open" and v["kind"] != "blank_rating"]
     if open_items:
-        sec.append((f"Validation items not resolved ({len(open_items)})", [f"{v['key']}: {v['reason']}" for v in open_items[:25]]
+        sec.append((f"Validation items not resolved ({len(open_items)})", [f"{v['key']}: {v['reason']}{_qtail(v)}" for v in open_items[:25]]
                     + ([f"... and {len(open_items) - 25} more"] if len(open_items) > 25 else [])))
     pend = [a for a in m["activities"] if a["decision"] == "pending"]
     if pend:

@@ -19,7 +19,7 @@ from .report_model import build_report_model
 from .review import workflow as wf
 from .review.audit import AuditLog
 from .settings import Settings
-from .traceability import matrix_csv, scores_csv, validation_csv
+from .traceability import matrix_csv, question_view, scores_csv, validation_csv
 
 
 def _now() -> str:
@@ -133,7 +133,7 @@ class AssessmentService:
         groups = {k: result[k] for k in ("perspectives", "workstreams", "activities", "categories")}
         self.s.put(self._k(sid, "scores.csv"), scores_csv(groups).encode())
         self.s.put(self._k(sid, "traceability_matrix.csv"), matrix_csv(result["questions"]).encode())
-        self.s.put(self._k(sid, "validation_items.csv"), validation_csv(result["validation_items"]).encode())
+        self.s.put(self._k(sid, "validation_items.csv"), validation_csv(result["validation_items"], question_view(result, self.cfg)).encode())
         self.s.put(self._k(sid, "cache_keys.json"), _dump(sorted(ex.touched)))
         self._save_state(sid, state)
         audit.append("agent", "result", {"result_hash": sha256(canonical(result)), "fingerprint": result["meta"]["scores_fingerprint"],
@@ -167,7 +167,7 @@ class AssessmentService:
         res, state = self._need(sid)
         wf.ensure_unlocked(state)
         if res["blank_ratings"]:
-            raise ValueError(f"{len(res['blank_ratings'])} rating(s) are blank ({', '.join(res['blank_ratings'][:6])}); "
+            raise ValueError(f"{len(res['blank_ratings'])} rating(s) are blank ({wf.blank_labels(res, 6)}); "
                              "give them a rating before confirming the scores")
         state["scores_confirmed"] = {"by": actor, "at": self.clock(), "fingerprint": res["meta"]["scores_fingerprint"]}
         self._save_state(sid, state)

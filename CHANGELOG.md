@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.8.2 (reviewers can see what Q24 is; scoring documentation)
+- A bare question number is never shown alone. Wherever a Q-number appears the reviewer now sees the question text, its category, perspective and activity,
+  the current rating and what that level says, the evidence found (or "No supporting evidence yet"), the Rating Guide level on a guide mismatch,
+  all five levels (the current one highlighted), and a short "how to review" hint for that kind of item.
+  Dashboard: Validation cards, Proposals (rating, evidence and follow-up), the Overview banner. Release blockers and the confirm-scores error name the category.
+  Files: Excel "To validate" (new Category, Question, Rating and what it says columns; the Resolution column moved to H and its summary formula follows),
+  validation CSV, Word blank-rating line, open-items file, context file.
+- New docs/SCORING.md and a PDF (MRA_Agent_Scoring_Method.pdf): every formula, rounding and colour rule, worked examples computed by the code, the hierarchy,
+  validation and evidence rules, the release gate, and the AWS documentation behind the questionnaire, with a plain statement of what AWS publishes and what is inferred.
+- Wording: "customer" instead of "client" in the deck code comments.
+
 ## 0.8.1 (fixes from real PowerPoint renders)
 - Long answers (executive summary) no longer collapse to one word and "..." per line or overflow onto the radar: lines are kept whole, or flowed, at a readable size
   (11 pt minimum for answers, 12 pt for sentences and recommendations, 10 pt for lists), then cut at a word with "..." (the full text is in the Excel workbook).

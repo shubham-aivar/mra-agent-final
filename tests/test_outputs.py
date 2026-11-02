@@ -126,7 +126,7 @@ def test_the_word_report_has_the_aws_sections_in_order(m_full):
 def test_incomplete_is_stated_never_zero(m_blank):
     doc = Document(io.BytesIO(render("docx", m_blank)))
     t = _text(doc) + "\n".join(c.text for tb in doc.tables for r in tb.rows for c in r.cells)
-    assert "Incomplete: 1 rating(s) are blank (Q42)" in t and "Incomplete" in t
+    assert "Incomplete: 1 rating(s) are blank (Q42 (" in t and "Incomplete" in t
     scores = [[c.text for c in r.cells] for r in doc.tables[1].rows]
     assert ["People", "Incomplete", "5", "6"] in scores
 
@@ -312,3 +312,45 @@ def test_the_real_aws_deck_is_filled_without_leaving_the_old_customers_text(m_fu
     out = render("pptx", m_full, Path(os.environ["MRA_TEMPLATE_DECK"]).read_bytes())
     prs = Presentation(io.BytesIO(out))
     assert "FACILITATOR" not in _slide_text(prs) and m_full["deck_stats"]["charts"] == 20 and m_full["deck_stats"]["heatmap_boxes"] == 34
+
+
+# ---- a bare Q-number is never shown alone: the reviewer sees the question, its category and rating ----------------------------------------
+def test_validation_rows_carry_the_question_the_reviewer_needs(m_full):
+    rows = [v for v in m_full["validation"]]
+    assert rows, "the fixture should have validation items"
+    for v in rows:
+        q = v["question"]
+        assert q and q["question_id"] == v["ref"] and q["text"] and q["category"] and len(q["levels"]) == 5
+        assert q["perspective"] and (q["score"] is None or q["level_text"])
+    assert set(m_full["question_views"]) >= {v["ref"] for v in rows}
+
+
+def test_the_validation_sheet_shows_category_question_and_rating(m_full):
+    ws = load_workbook(io.BytesIO(render("xlsx", m_full)))["To validate"]
+    head = [c.value for c in ws[1]]
+    assert head[:8] == ["Item", "Kind", "Ref", "Category", "Question", "Rating and what it says", "Reason", "Resolution"]
+    r = [c.value for c in ws[2]]
+    assert r[3] and r[4] and r[5] and r[2] == m_full["validation"][0]["ref"]
+    summary = load_workbook(io.BytesIO(render("xlsx", m_full)))["Summary"]
+    formulas = [c.value for row in summary.iter_rows() for c in row if isinstance(c.value, str) and "To validate" in c.value]
+    assert any("$H$" in f and "open" in f for f in formulas)
+
+
+def test_the_blank_rating_names_its_category_everywhere(m_blank):
+    from mra.outputs.todo_out import render_todo
+    cat = m_blank["question_views"]["Q42"]["category"]
+    assert f"Q42 ({cat})" in render_todo(m_blank).decode()
+    assert m_blank["question_views"]["Q42"]["text"] in render_todo(m_blank).decode()
+    doc = Document(io.BytesIO(render("docx", m_blank)))
+    assert f"Q42 ({cat})" in _text(doc)
+
+
+def test_the_validation_csv_carries_the_question(svc, cfg, rset, full_ratings):
+    from mra.traceability import question_view, validation_csv
+    svc.run(rset(full_ratings, meta=META), "tester")
+    res = svc.result(SID)
+    items = res["validation_items"]
+    assert items
+    rows = validation_csv(items, question_view(res, cfg)).splitlines()
+    assert rows[0] == "item_id,kind,ref,category,question,rating,what_that_level_says,reason"
+    assert items[0]["ref"] in rows[1] and cfg["qmap"][items[0]["ref"]].text.split(",")[0][:20] in rows[1]

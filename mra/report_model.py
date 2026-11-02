@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from .review.workflow import REQUIRED_META, effective_meta, item_key
+from .traceability import question_view
 
 
 def _group_label(g: dict) -> str:
@@ -48,10 +49,11 @@ def build_report_model(result: dict, state: dict, generated_at: str, proposals: 
     followups = {p["payload"]["item_key"]: p["payload"] for p in accepted if p["kind"] == "followup"}
     context_items = [{**p["payload"], "id": p["id"]} for p in accepted if p["kind"] == "context_item"]
     items = []
+    views = question_view(result, cfg)
     for i in result["validation_items"]:
         r = state["resolutions"].get(item_key(i))
         items.append({**i, "key": item_key(i), "resolution": r["resolution"] if r else "open", "note": r["note"] if r else "",
-                      "followup": followups.get(item_key(i))})
+                      "followup": followups.get(item_key(i)), "question": views.get(i["ref"])})
     llm = result["meta"].get("llm", {})
     return {
         "title": f"Migration Readiness Assessment: {result['meta']['customer_label']}",
@@ -67,7 +69,7 @@ def build_report_model(result: dict, state: dict, generated_at: str, proposals: 
         "modules": result["modules"], "activities": acts, "action_rows": action_rows, "rejected_actions": rejected,
         "focus": result["focus"], "questions": result["questions"], "text_answers": result["text_answers"],
         "optional_modules": result["optional_modules"], "validation": items, "traceability": result["traceability"],
-        "adjustments": result["adjustments"], "blank_ratings": result["blank_ratings"], "context_items": context_items,
+        "adjustments": result["adjustments"], "blank_ratings": result["blank_ratings"], "context_items": context_items, "question_views": views,
         "scores_confirmed": state.get("scores_confirmed"), "radar_guide": cfg["rubric"]["radar_guide"],
         "areas": list(cfg["areas"]), "question_bank": cfg["qmap"], "input_warnings": result["meta"].get("input_warnings", []),
         "pending_proposals": sum(p["status"] == "proposed" for p in proposals or []),

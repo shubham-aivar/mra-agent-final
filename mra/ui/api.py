@@ -341,7 +341,8 @@ class UiApi:
             notes = {e["evidence_id"]: e for e in raw["evidence"]}
             qdef = cfg["qmap"]
             questions = [{**{k: q[k] for k in ("question_id", "number", "category", "activity", "score", "original_score", "level_text",
-                                               "evidence_status", "traceable", "adjusted", "adjustment", "perspective", "module", "evidence_ids")},
+                                               "evidence_status", "traceable", "adjusted", "adjustment", "perspective", "module",
+                                               "evidence_ids", "guide_level")},
                           "text": qdef[q["question_id"]].text, "levels": list(qdef[q["question_id"]].levels)} for q in res["questions"]]
             proposals = []
             for p in props:

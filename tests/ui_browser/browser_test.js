@@ -77,7 +77,7 @@ const tab = async (name) => {
   await step("the Release tab refuses to confirm while a rating is blank", async () => {
     await tab("Release");
     ok(await page.getByRole("button", { name: "Confirm the scores" }).isDisabled(), "confirm disabled");
-    ok((await text()).includes("rating(s) are blank (Q42)"), "blocker text");
+    ok((await text()).includes("rating(s) are blank (Q42 ("), "blocker text names the category");
   });
 
   await step("set the blank rating from the Ratings tab", async () => {
@@ -136,6 +136,11 @@ const tab = async (name) => {
     ok(await card.locator("details").first().evaluate((n) => n.open), "the form stays open after the error");
     await tab("Validation");
     eq(await page.locator(".banner").count(), 0, "an error does not follow you to another tab");
+    const q = page.locator(".qdetail").first();                                                           // a reviewer sees what the Q-number is
+    ok((await q.locator(".qtext").innerText()).length > 10, "the full question text is shown");
+    ok(/^Q\d+/.test(await q.locator(".qhead strong").innerText()), "the question id is shown");
+    ok((await q.locator(".qhint").innerText()).startsWith("How to review"), "a how-to-review hint is shown");
+    ok((await q.locator("ol.levels li").count()) === 5, "all five levels are listed");
   });
 
   await step("resolve a validation item in the page, then the rest", async () => {

@@ -54,4 +54,4 @@ A group with a blank rating is **Incomplete** (the AWS tool prints 0): no score,
     mra/service.py   every operation; the command line and the hosted API both call it
     hosted/ infra/   Lambda API handler and AWS CDK stack (never deployed)
     config/          question bank, workstreams, rubric, action library, input mapping, prompts
-See `docs/DEPLOY.md`, `docs/UI.md`, `docs/TEMPLATES.md`, `docs/DESIGN.md`, `docs/INTEGRATION.md`, `docs/AGENT.md`, `docs/AWS_TEST.md`, `docs/DEPLOY.md`, `CHANGELOG.md`.
+See `docs/DEPLOY.md`, `docs/UI.md`, `docs/TEMPLATES.md`, `docs/DESIGN.md`, `docs/SCORING.md`, `docs/INTEGRATION.md`, `docs/AGENT.md`, `docs/AWS_TEST.md`, `docs/DEPLOY.md`, `CHANGELOG.md`.

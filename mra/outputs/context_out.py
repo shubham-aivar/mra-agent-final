@@ -30,5 +30,6 @@ def render_context(m: dict, template: bytes | None = None) -> bytes:
               f"{a['observation']['text']} Next step: {act['text'] if act else 'to be agreed'}{owner}"]
     L += ["", "## Still being validated", ""]
     open_items = [v for v in m["validation"] if v["resolution"] == "open"]
-    L += [f"- {v['reason']}" for v in open_items] or ["Nothing outstanding."]
+    L += [f"- {v['reason']}" + (f" Question ({v['question']['category']}): {v['question']['text']}" if v.get("question") else "")
+           for v in open_items] or ["Nothing outstanding."]
     return ("\n".join(L) + "\n").encode("utf-8")

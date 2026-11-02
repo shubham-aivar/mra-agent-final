@@ -13,7 +13,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
-from ..traceability import safe_cell
+from ..traceability import safe_cell, strip_level
 
 FONT = "Arial"
 FILL = {"red": "F4B6B6", "amber": "FFE699", "green": "C6E0B4", "incomplete": "D9D9D9"}
@@ -152,9 +152,21 @@ def render_xlsx(m: dict, template: bytes | None = None) -> bytes:
         f = v["followup"]
         return "" if not f else f"To: {', '.join(f['audience_roles'])}\n" + "\n".join(f"- {x}" for x in f["questions"])
 
-    _table(val, ["Item", "Kind", "Ref", "Reason", "Resolution", "Note", "Follow-up draft (accepted)"],
-           [[v["item_id"], v["kind"], v["ref"], v["reason"], v["resolution"], v["note"], draft(v)] for v in m["validation"]],
-           [8, 22, 8, 80, 14, 40, 70], wrap={4, 6, 7})
+    def qcell(v: dict, key: str, default=""):
+        q = v.get("question")
+        return default if not q else q[key]
+
+    def says(v: dict) -> str:
+        q = v.get("question")
+        if not q or q["score"] is None:
+            return "Not rated yet"
+        return f"Rated {q['score']} of 5: {strip_level(q['level_text'])}"
+
+    _table(val, ["Item", "Kind", "Ref", "Category", "Question", "Rating and what it says", "Reason", "Resolution", "Note",
+                 "Follow-up draft (accepted)"],
+           [[v["item_id"], v["kind"], v["ref"], qcell(v, "category"), qcell(v, "text"), says(v), v["reason"], v["resolution"], v["note"],
+             draft(v)] for v in m["validation"]],
+           [8, 22, 8, 26, 60, 50, 60, 14, 40, 70], wrap={4, 5, 6, 7, 9, 10})
     n_v = len(m["validation"])
     if m["adjustments"]:
         adj = wb.create_sheet("Adjustments")
@@ -171,7 +183,7 @@ def render_xlsx(m: dict, template: bytes | None = None) -> bytes:
     s.cell(r - 1, 2).number_format = "0.0%"
     s.cell(r - 1, 2).alignment = Alignment(horizontal="left")
     put("Items to validate", f"=COUNTA('To validate'!$A$2:$A${max(n_v, 1) + 1})" if n_v else 0, formula=True)
-    put("Items still open", f"=COUNTIF('To validate'!$E$2:$E${n_v + 1},\"open\")" if n_v else 0, formula=True)
+    put("Items still open", f"=COUNTIF('To validate'!$H$2:$H${n_v + 1},\"open\")" if n_v else 0, formula=True)
     r += 1
     s.cell(r, 1, "Executive summary").font = _f(True, "1F3864", 12)
     r += 1

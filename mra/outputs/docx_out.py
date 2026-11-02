@@ -138,7 +138,9 @@ def render_docx(m: dict, template: bytes | None = None) -> bytes:
                                      ["Reference", m["set_id"]], ["Generated", m["generated_at"]], ["Text engine", m["engine"]]], [1.8, 4.7])
     if m["blank_ratings"]:
         p = doc.add_paragraph()
-        _run(p, f"Incomplete: {len(m['blank_ratings'])} rating(s) are blank ({', '.join(m['blank_ratings'])}). "
+        views = m["question_views"]
+        names = ", ".join(f"{i} ({views[i]['category']})" if i in views else i for i in m["blank_ratings"])
+        _run(p, f"Incomplete: {len(m['blank_ratings'])} rating(s) are blank ({names}). "
                 "Groups that contain them show as Incomplete until they are rated.", bold=True, color=RGBColor(0xC0, 0x00, 0x00))
     _heading(doc, "Contents", 1)
     for line in ("Radar charts", "Heatmap", "Scores", "Details", "Consolidated recommended actions", "Responses"):

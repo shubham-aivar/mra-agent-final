@@ -17,6 +17,35 @@ def strip_level(text: str | None) -> str:
     return _LEVEL_PREFIX.sub("", text or "").strip()
 
 
+def question_view(result: dict, cfg: dict) -> dict[str, dict]:
+    """What a reviewer needs to understand a bare question id: the question, where it sits, its rating and what that level says.
+
+    Built from the scored result and the question bank only, so every screen and file shows the same thing.
+    """
+    persp = {p["id"]: p["name"] for p in cfg["perspectives"]}
+    acts = {a["id"]: a for a in result["activities"]}
+    streams = {w["id"]: w["name"] for w in result["workstreams"]}
+    out = {}
+    for q in result["questions"]:
+        d = cfg["qmap"].get(q["question_id"])
+        if d is None:
+            continue
+        a = acts.get(q["activity"])
+        out[q["question_id"]] = {
+            "question_id": q["question_id"], "number": q["number"], "text": d.text, "category": q["category"],
+            "perspective": persp.get(q["perspective"]), "activity_id": a["id"] if a else None, "activity": a["name"] if a else None,
+            "workstream": streams.get(q["workstream"]), "score": q["score"], "original_score": q["original_score"],
+            "level_text": q["level_text"], "levels": list(d.levels), "guide_level": q["guide_level"],
+            "evidence_status": q["evidence_status"], "evidence_ids": list(q["evidence_ids"])}
+    return out
+
+
+def question_label(views: dict[str, dict], qid: str) -> str:
+    """A short human label for a question id: Q24 (IT Service Delivery Model)."""
+    v = views.get(qid)
+    return f"{qid} ({v['category']})" if v else qid
+
+
 def build_validation_items(qresults: list[dict], rubric: dict) -> list[dict]:
     items: list[dict] = []
     for q in qresults:
@@ -126,5 +155,13 @@ def scores_csv(groups: dict) -> str:
     return _csv(["level", "id", "name", "score", "status", "colour", "radar", "answered", "total"], [[safe_cell(c) for c in r] for r in rows])
 
 
-def validation_csv(items: list[dict]) -> str:
-    return _csv(["item_id", "kind", "ref", "reason"], [[i["item_id"], i["kind"], i["ref"], safe_cell(i["reason"])] for i in items])
+def validation_csv(items: list[dict], views: dict[str, dict] | None = None) -> str:
+    """One row per item. With `views` (see question_view) each row also carries the question, its category, its rating and what that level says."""
+    views = views or {}
+
+    def row(i: dict) -> list:
+        v = views.get(i["ref"]) or {}
+        rating = "" if v.get("score") is None else v["score"]
+        return [i["item_id"], i["kind"], i["ref"], safe_cell(v.get("category", "")), safe_cell(v.get("text", "")), rating,
+                safe_cell(strip_level(v.get("level_text"))), safe_cell(i["reason"])]
+    return _csv(["item_id", "kind", "ref", "category", "question", "rating", "what_that_level_says", "reason"], [row(i) for i in items])

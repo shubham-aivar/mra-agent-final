@@ -378,7 +378,7 @@ function groupTable(title, rows) {
 function overview(v) {
   const t = v.traceability, f = v.focus;
   return el("div", {},
-    v.blank_ratings.length ? el("div", { class: "banner warn" }, el("strong", {}, v.blank_ratings.length + " rating(s) are blank: " + v.blank_ratings.join(", ") + ". "),
+    v.blank_ratings.length ? el("div", { class: "banner warn" }, el("strong", {}, v.blank_ratings.length + " rating(s) are blank: " + v.blank_ratings.map((id) => { const q = qOf(v, id); return q ? id + " (" + q.category + ")" : id; }).join(", ") + ". "),
       "The groups that contain them show as Incomplete (never 0) and release is blocked. ", el("a", { href: "#/run/" + encodeURIComponent(v.set_id) + "/ratings" }, "Give them a rating")) : null,
     v.input_warnings.length ? el("div", { class: "banner info" }, el("strong", {}, "Notes from reading the questionnaire"), el("ul", {}, v.input_warnings.map((w) => el("li", {}, w)))) : null,
     el("div", { class: "card" }, el("h3", { class: "first" }, "Summary", tagOf(v.narrative.source)), el("p", {}, v.narrative.text)),
@@ -479,6 +479,40 @@ function activities(v) {
     Object.entries(groups).map(([ws, list]) => el("div", {}, el("h3", {}, ws), list.map((a) => activityCard(v, a))))); 
 }
 
+// ---- question detail: a bare Q-number is never shown alone to a reviewer -------------------------------------------------------------
+const HOW_TO_REVIEW = {
+  blank_rating: "How to review: nobody has rated this question yet. Read the question and the five levels, then give it a rating on the Ratings tab (or accept an agent rating proposal). Groups that contain it stay Incomplete until then.",
+  guide_mismatch: "How to review: the rating in the questionnaire export differs from the level the Rating Guide implies. Read both levels below, decide which is right, and adjust the rating on the Ratings tab with a reason, or resolve this item with a note.",
+  unverified_high_claim: "How to review: this question is rated high but no note passage supports it. Find the supporting passage in the Answers and notes tab, or run the Evidence task on the Proposals tab. If you cannot verify the claim, lower the rating, or accept the risk with a note.",
+  no_evidence: "How to review: this rating has no supporting note passage. Add the evidence (Answers and notes tab, or the Evidence task on the Proposals tab), or accept the risk with a note.",
+};
+
+function qOf(v, id) {
+  const q = (v.questions || []).find((x) => x.question_id === id);
+  if (!q) return null;
+  const p = (v.perspectives || []).find((x) => x.id === q.perspective);
+  const a = (v.activities || []).find((x) => x.id === q.activity);
+  return { ...q, perspective_name: p ? p.name : null, activity_name: a ? a.name : null };
+}
+
+function questionPanel(v, id, kind) {
+  const q = qOf(v, id);
+  if (!q) return el("div", { class: "qdetail" }, el("strong", {}, id));
+  const levelText = q.level_text ? q.level_text.replace(/^\s*\d+\s*-\s*/, "") : null;
+  return el("div", { class: "qdetail" },
+    el("div", { class: "qhead" }, el("strong", {}, q.question_id), el("span", {}, q.category),
+      q.perspective_name ? el("span", { class: "tag" }, q.perspective_name) : null,
+      q.activity_name ? el("span", { class: "tag" }, q.activity + " " + q.activity_name) : null),
+    el("div", { class: "qtext" }, q.text),
+    el("div", { class: "qrate" }, q.score === null || q.score === undefined ? "Not rated yet." : "Rated " + q.score + " of 5: " + levelText,
+      q.adjusted ? el("span", { class: "muted small" }, " (adjusted by a reviewer; the original was " + q.original_score + ")") : null),
+    el("div", { class: "muted small" }, q.evidence_ids.length ? "Evidence: " + q.evidence_ids.join(", ") : "No supporting evidence yet."),
+    kind === "guide_mismatch" && q.guide_level ? el("div", { class: "qrate" }, "The Rating Guide implies level " + q.guide_level + ": " + (q.levels[q.guide_level - 1] || "").replace(/^\s*\d+\s*-\s*/, "")) : null,
+    el("details", {}, el("summary", {}, "All five levels"),
+      el("ol", { class: "levels" }, q.levels.map((l, n) => el("li", { class: n + 1 === q.score ? "cur" : null }, l.replace(/^\s*\d+\s*-\s*/, ""))))),
+    kind && HOW_TO_REVIEW[kind] ? el("p", { class: "qhint" }, HOW_TO_REVIEW[kind]) : null);
+}
+
 // ---- validation -----------------------------------------------------------------------------------------------------------------------
 function validation(v) {
   let filter = "open";
@@ -490,6 +524,7 @@ function validation(v) {
       const note = el("input", { type: "text", value: i.note || "", placeholder: "Note (required)" });
       return el("div", { class: "card" }, el("div", { class: "row" }, el("strong", {}, i.item_id), el("span", { class: "tag" }, i.kind.replace(/_/g, " ")),
         el("span", {}, i.reason), el("span", { class: "grow" }), el("span", { class: "chip " + (i.resolution === "open" ? "c-amber" : "c-green") }, i.resolution.replace("_", " "))),
+        questionPanel(v, i.ref, i.kind),
         i.followup ? el("div", { class: "quote" }, "Follow-up drafted for " + i.followup.audience_roles.join(", ") + ":\n" + i.followup.questions.map((q) => "- " + q).join("\n")) : null,
         i.kind === "blank_rating" ? el("p", { class: "muted" }, "A blank rating is not resolved with a note: give it a rating on the Ratings tab.") :
           el("div", { class: "row" }, res, note, el("button", { class: "secondary", onclick: () => act("Saving...", () => api("POST", "/api/runs/" + encodeURIComponent(v.set_id) + "/resolve",
@@ -514,10 +549,10 @@ function excerpt(ex, fallbackQuote) {
 function proposalCard(v, p) {
   const d = p.payload;
   let body;
-  if (p.kind === "rating") body = [el("p", {}, el("strong", {}, d.question_id + " = " + d.score), " | level text: " + d.level_text), el("p", {}, "Why: " + d.rationale), excerpt(p.excerpt, d.quote)];
-  else if (p.kind === "evidence_link") body = [el("p", {}, el("strong", {}, "Note " + d.evidence_id + " supports " + d.question_id)), excerpt(p.excerpt, d.quote)];
+  if (p.kind === "rating") body = [questionPanel(v, d.question_id), el("p", {}, el("strong", {}, "Proposed rating " + d.score), " | level text: " + d.level_text), el("p", {}, "Why: " + d.rationale), excerpt(p.excerpt, d.quote)];
+  else if (p.kind === "evidence_link") body = [el("p", {}, el("strong", {}, "Note " + d.evidence_id + " supports " + d.question_id)), questionPanel(v, d.question_id), excerpt(p.excerpt, d.quote)];
   else if (p.kind === "context_item") body = [el("p", {}, el("strong", {}, d.kind + ": "), d.text), excerpt(p.excerpt, d.quote)];
-  else body = [el("p", {}, el("strong", {}, "Follow-up for " + d.item_key), " to " + d.audience_roles.join(", ")), el("ul", { class: "plain" }, d.questions.map((q) => el("li", {}, q))), el("p", { class: "muted" }, d.rationale)];
+  else body = [el("p", {}, el("strong", {}, "Follow-up for " + d.item_key), " to " + d.audience_roles.join(", ")), ((m) => (m ? questionPanel(v, m[0], m[1]) : null))(/^(\w+):(Q\d+)$/.exec(d.item_key || "") && [/Q\d+/.exec(d.item_key)[0], d.item_key.split(":")[0]]), el("ul", { class: "plain" }, d.questions.map((q) => el("li", {}, q))), el("p", { class: "muted" }, d.rationale)];
   const comment = el("input", { type: "text", placeholder: "Comment (optional)" });
   const decide = (which) => act("Saving...", () => api("POST", "/api/runs/" + encodeURIComponent(v.set_id) + "/proposals", { [which]: [p.id], comment: comment.value }),
     p.id + (which === "accept" ? " accepted." : " rejected."));

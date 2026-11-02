@@ -1,6 +1,6 @@
 """The Ingram Micro MAP deliverable deck, filled with the MRA results.
 
-The client's template is used as it is: the same 25 slides in the same order, the same layouts, colours, fonts and pictures. Only these things change:
+The customer's template is used as is: the same 25 slides in the same order, the same layouts, colours, fonts and pictures. Only these things change:
   * the MRA slides are filled (readiness charts, key recommendations, executive summary, areas of focus);
   * the sections that need other inputs (discovery, 7R, cost) are left blank: their slides stay, with their labels, but the sample data and the
     "<>" fill-in markers are removed, so no sample customer's numbers remain;
@@ -143,7 +143,7 @@ class Filler:
 
     @staticmethod
     def no_proofing(shape) -> None:
-        """Our text carries no spelling or grammar marks (a squiggle under a word is mess in a client deliverable)."""
+        """Our text carries no spelling or grammar marks (a squiggle under a word is mess in a customer deliverable)."""
         for p in shape.text_frame.paragraphs:
             for r in p.runs:
                 rpr = r._r.get_or_add_rPr()

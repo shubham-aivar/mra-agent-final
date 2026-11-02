@@ -100,11 +100,19 @@ def effective_meta(result: dict, state: dict) -> dict:
     return {**result["meta"].get("report", {}), **state.get("meta", {})}
 
 
+def blank_labels(result: dict, limit: int | None = None) -> str:
+    """The blank questions as a reviewer reads them: Q42 (Organizational Structure), Q43 (...)."""
+    cat = {q["question_id"]: q["category"] for q in result["questions"]}
+    ids = result["blank_ratings"]
+    shown = ", ".join(f"{i} ({cat[i]})" if i in cat else i for i in (ids[:limit] if limit else ids))
+    return shown + (" ..." if limit and len(ids) > limit else "")
+
+
 def gate(result: dict, state: dict) -> list[str]:
     """Everything still standing between this report and release. Empty means it can be finalised."""
     blockers = []
     if result["blank_ratings"]:
-        shown = ", ".join(result["blank_ratings"][:8]) + (" ..." if len(result["blank_ratings"]) > 8 else "")
+        shown = blank_labels(result, 8)
         blockers.append(f"{len(result['blank_ratings'])} rating(s) are blank ({shown}): give each a rating "
                         "(python -m mra adjust, or accept an agent rating proposal)")
     for a in result["activities"]:
@@ -120,7 +128,8 @@ def gate(result: dict, state: dict) -> list[str]:
                 blockers.append(f"activity {a['id']}: the approved action has no due date")
     for i in result["validation_items"]:
         if i["kind"] != "blank_rating" and item_key(i) not in state["resolutions"]:
-            blockers.append(f"validation item {item_key(i)}: not resolved")
+            cat = {q["question_id"]: q["category"] for q in result["questions"]}.get(i["ref"])
+            blockers.append(f"validation item {item_key(i)}{f' ({cat})' if cat else ''}: not resolved")
     conf = state["scores_confirmed"]
     if not conf:
         blockers.append("the reviewer has not confirmed the scores")
